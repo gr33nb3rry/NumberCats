@@ -30,7 +30,7 @@ MonoBehaviour:
       m_Items:
       - rid: 5107510872196775998
   - m_Id: 1238219538432
-    m_Localized: "\u0448\u0430\u043D\u0441 {x}%"
+    m_Localized: "\u0448\u0430\u043D\u0441\n{x}%"
     m_Metadata:
       m_Items:
       - rid: 5107510872196775998

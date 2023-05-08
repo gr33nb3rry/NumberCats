@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4097b87541250174a9c1eb4d1dd74d9a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f56bf473a7415d4799ed52bcd5e144f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -414,6 +414,7 @@ GameObject:
   - component: {fileID: 4612281879267343104}
   - component: {fileID: 6703404160618427390}
   - component: {fileID: 3725883220926789889}
+  - component: {fileID: 2598971207755954840}
   m_Layer: 5
   m_Name: outline
   m_TagString: Untagged
@@ -439,7 +440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 254, y: 104}
+  m_SizeDelta: {x: 260, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6703404160618427390
 CanvasRenderer:
@@ -479,6 +480,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!111 &2598971207755954840
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6936265047404877521}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: dbeaef33116a55041ac4921b18f677eb, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: dbeaef33116a55041ac4921b18f677eb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7592871748052184425
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -587,6 +604,7 @@ GameObject:
   - component: {fileID: 7921032718712161929}
   - component: {fileID: 5522732868770484006}
   - component: {fileID: 1500687254829481606}
+  - component: {fileID: 6384209702447068073}
   m_Layer: 5
   m_Name: outline (1)
   m_TagString: Untagged
@@ -612,7 +630,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 254, y: 104}
+  m_SizeDelta: {x: 260, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5522732868770484006
 CanvasRenderer:
@@ -652,3 +670,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!111 &6384209702447068073
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840115680043654660}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: dbeaef33116a55041ac4921b18f677eb, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: dbeaef33116a55041ac4921b18f677eb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

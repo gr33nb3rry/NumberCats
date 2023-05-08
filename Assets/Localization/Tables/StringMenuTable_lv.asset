@@ -45,24 +45,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10877816455168
-    m_Localized: viegli
+    m_Localized: "\u0101tra"
     m_Metadata:
       m_Items: []
   - m_Id: 10881201258496
-    m_Localized: "vid\u0113ji"
+    m_Localized: "vid\u0113ja"
     m_Metadata:
       m_Items: []
   - m_Id: 10885823381504
-    m_Localized: "gr\u016Bti"
+    m_Localized: ilga
     m_Metadata:
       m_Items: []
   - m_Id: 1025416376795136
-    m_Localized: 'score: {x}'
+    m_Localized: "v\u0113rt\u0113jums {x}"
     m_Metadata:
       m_Items:
       - rid: 5107510872196775963
   - m_Id: 1776154480656384
-    m_Localized: bought
+    m_Localized: nopirka
     m_Metadata:
       m_Items: []
   references:

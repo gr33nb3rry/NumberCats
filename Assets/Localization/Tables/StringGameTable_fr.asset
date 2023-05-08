@@ -30,7 +30,9 @@ MonoBehaviour:
       m_Items:
       - rid: 5107510872196775996
   - m_Id: 1238219538432
-    m_Localized: chance {x}%
+    m_Localized: 'chance
+
+      {x}%'
     m_Metadata:
       m_Items:
       - rid: 5107510872196775996

@@ -45,7 +45,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10877816455168
-    m_Localized: facile
+    m_Localized: court
     m_Metadata:
       m_Items: []
   - m_Id: 10881201258496
@@ -57,12 +57,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1025416376795136
-    m_Localized: 'score: {x}'
+    m_Localized: score {x}
     m_Metadata:
       m_Items:
       - rid: 5107510872196775962
   - m_Id: 1776154480656384
-    m_Localized: bought
+    m_Localized: "achet\xE9s"
     m_Metadata:
       m_Items: []
   references:
