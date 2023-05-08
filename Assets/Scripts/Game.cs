@@ -521,7 +521,9 @@ public class Game : MonoBehaviour
     {
         Menu.coins += coins;
         if (isWon)
+        {
             Menu.score += score;
+        }
         else Menu.score = 0;
         if (Menu.highScore < score)
         {

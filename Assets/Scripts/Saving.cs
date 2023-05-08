@@ -9,11 +9,15 @@ using System.Collections;
 
 public class Saving : MonoBehaviour
 {
+    public Customization customization;
     public bool isStart;
     private string cat = "";
     private string coinsScoreHighscore = "";
     private string settings = "";
     private string stat = "";
+    private string hatBought = "";
+    private string faceBought = "";
+    private string bodyBought = "";
     async void Awake()
     {
         if (isStart)
@@ -70,25 +74,27 @@ public class Saving : MonoBehaviour
         coinsScoreHighscore = "";
         settings = "";
         stat = "";
+        hatBought = "";
+        faceBought = "";
+        bodyBought = "";
         CatGenerate();
         CoinsScoreHSGenerate();
         SettingsGenerate();
         StatGenerate();
+        HatBoughtGenerate();
+        FaceBoughtGenerate();
+        BodyBoughtGenerate();
         var data = new Dictionary<string, object> {
             {"Cat", cat},
             {"CoinsScoreHighscore", coinsScoreHighscore},
             {"Settings", settings},
-            {"Stat", stat}};
+            {"Stat", stat},
+            {"HatBought", hatBought},
+            {"FaceBought", faceBought},
+            {"BodyBought", bodyBought},
+        };
         await CloudSaveService.Instance.Data.ForceSaveAsync(data);
         Debug.Log("Saved");
-    }
-    private async void DeleteAll()
-    {
-        await CloudSaveService.Instance.Data.ForceDeleteAsync("Cat");
-        await CloudSaveService.Instance.Data.ForceDeleteAsync("CoinsScoreHighscore");
-        await CloudSaveService.Instance.Data.ForceDeleteAsync("Settings");
-        await CloudSaveService.Instance.Data.ForceDeleteAsync("Stat");
-        Debug.Log("Deleted");
     }
     private void CatGenerate()
     {
@@ -124,6 +130,39 @@ public class Saving : MonoBehaviour
         stat += ' ';
         stat += Settings.gamesWon.ToString();
     }
+    private void HatBoughtGenerate()
+    {
+        for (int i = 0; i < Customization.hatBought.Count; i++)
+        {
+            hatBought += Customization.hatBought[i].ToString();
+            if (i < Customization.hatBought.Count - 1)
+            {
+                hatBought += ' ';
+            }
+        }
+    }
+    private void FaceBoughtGenerate()
+    {
+        for (int i = 0; i < Customization.faceBought.Count; i++)
+        {
+            faceBought += Customization.faceBought[i].ToString();
+            if (i < Customization.faceBought.Count - 1)
+            {
+                faceBought += ' ';
+            }
+        }
+    }
+    private void BodyBoughtGenerate()
+    {
+        for (int i = 0; i < Customization.bodyBought.Count; i++)
+        {
+            bodyBought += Customization.bodyBought[i].ToString();
+            if (i < Customization.bodyBought.Count - 1)
+            {
+                bodyBought += ' ';
+            }
+        }
+    }
     public async void Load()
     {
         try
@@ -133,16 +172,22 @@ public class Saving : MonoBehaviour
             string coinsScoreHSTemp = savedData["CoinsScoreHighscore"];
             string settingsTemp = savedData["Settings"];
             string statTemp = savedData["Stat"];
+            string hatBoughtTemp = savedData["HatBought"];
+            string faceBoughtTemp = savedData["FaceBought"];
+            string bodyBoughtTemp = savedData["BodyBought"];
             CatLoad(catTemp);
             CoinsScoreHighscoreLoad(coinsScoreHSTemp);
             SettingsLoad(settingsTemp);
             StatLoad(statTemp);
+            HatBoughtLoad(hatBoughtTemp);
+            FaceBoughtLoad(faceBoughtTemp);
+            BodyBoughtLoad(bodyBoughtTemp);
             Debug.Log("Loaded");
             StartCoroutine(LoadMenu());
         }
-        catch (Exception)
+        catch (Exception e)
         {
-            Debug.Log("Loading error");
+            Debug.Log("Loading error " + e);
             StartCoroutine(LoadMenu());
         }
     }
@@ -176,5 +221,29 @@ public class Saving : MonoBehaviour
         string[] dataTemp = data.Split(' ');
         Settings.gamesPlayed = Convert.ToInt32(dataTemp[0]);
         Settings.gamesWon = Convert.ToInt32(dataTemp[1]);
+    }
+    private void HatBoughtLoad(string data)
+    {
+        string[] dataTemp = data.Split(' ');
+        for (int i = 0; i < dataTemp.Length; i++)
+        {
+            Customization.hatItems[Convert.ToInt32(dataTemp[i])].isBougth = true;
+        }
+    }
+    private void FaceBoughtLoad(string data)
+    {
+        string[] dataTemp = data.Split(' ');
+        for (int i = 0; i < dataTemp.Length; i++)
+        {
+            Customization.faceItems[Convert.ToInt32(dataTemp[i])].isBougth = true;
+        }
+    }
+    private void BodyBoughtLoad(string data)
+    {
+        string[] dataTemp = data.Split(' ');
+        for (int i = 0; i < dataTemp.Length; i++)
+        {
+            Customization.bodyItems[Convert.ToInt32(dataTemp[i])].isBougth = true;
+        }
     }
 }

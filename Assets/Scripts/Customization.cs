@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Customization : MonoBehaviour
 {
-    public ShopItem[] hatItems = new ShopItem[]
+    static public ShopItem[] hatItems = new ShopItem[]
     {
         new ShopItem(cost: 0){isBougth = true},
         new ShopItem(cost: 100),
@@ -19,7 +19,7 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 100),
         new ShopItem(cost: 100),
     };
-    public ShopItem[] faceItems = new ShopItem[]
+    static public ShopItem[] faceItems = new ShopItem[]
     {
         new ShopItem(cost: 0){isBougth = true},
         new ShopItem(cost: 50),
@@ -30,7 +30,7 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
     };
-    public ShopItem[] bodyItems = new ShopItem[]
+    static public ShopItem[] bodyItems = new ShopItem[]
     {
         new ShopItem(cost: 0){isBougth = true},
         new ShopItem(cost: 50),
@@ -40,9 +40,9 @@ public class Customization : MonoBehaviour
     static public int hatChosen;
     static public int faceChosen;
     static public int bodyChosen;
-    public List<int> hatBought = new List<int>();
-    public List<int> faceBought = new List<int>();
-    public List<int> bodyBought = new List<int>();
+    static public List<int> hatBought = new List<int>();
+    static public List<int> faceBought = new List<int>();
+    static public List<int> bodyBought = new List<int>();
     [Header("Sprites")]
     public Sprite[] hats;
     public Sprite[] bodies;

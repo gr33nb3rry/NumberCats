@@ -3418,6 +3418,7 @@ MonoBehaviour:
   isPlayButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
+  isShopBuyButton: 0
   isDifficultyButton: 0
   isCloseDifficultyButton: 0
   difficulty: 0
@@ -8680,6 +8681,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 015450c4d3071744a8e1be688b65c26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hatBought: 
+  faceBought: 
+  bodyBought: 
   hats:
   - {fileID: 21300000, guid: 706d1c5884e173c4cbc8223d39a55dd5, type: 3}
   - {fileID: 21300000, guid: a3b7310cd66b0414b80ce04cfe06cb08, type: 3}
@@ -10938,6 +10942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customization: {fileID: 1636811932}
+  saving: {fileID: 519420033}
   playPanel: {fileID: 156039804}
   slotsEasy: {fileID: 1636447371}
   slotsMedium: {fileID: 1613414428}

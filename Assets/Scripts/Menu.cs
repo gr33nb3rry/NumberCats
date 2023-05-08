@@ -12,6 +12,7 @@ public class Menu : MonoBehaviour
     static public int highScore;
     static public int activePanel = 1;
     public Customization customization;
+    public Saving saving;
     [Header("Panels")]
     public GameObject customizePanel;
     public GameObject playPanel;
@@ -53,7 +54,9 @@ public class Menu : MonoBehaviour
     private void CheckHighScore()
     {
         if (score > highScore)
+        {
             highScore = score;
+        }
     }
     public void ChooseDifficulty()
     {

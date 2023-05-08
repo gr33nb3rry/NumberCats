@@ -33,13 +33,13 @@ public class Shop : MonoBehaviour
         for (int i = 1; i < customization.hats.Length; i++)
         {
             obj = hatsPanel.transform.GetChild(i - 1);
-            if (customization.hatItems[i].isBougth)
+            if (Customization.hatItems[i].isBougth)
                 obj.GetChild(1).GetComponent<Image>().color = boughtColor;
             else obj.GetChild(1).GetComponent<Image>().color = hatColor;
 
             obj.GetChild(0).GetComponent<Image>().sprite = customization.hats[i];
 
-            if (customization.hatItems[i].isBougth)
+            if (Customization.hatItems[i].isBougth)
             {
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(false);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = true;
@@ -49,7 +49,7 @@ public class Shop : MonoBehaviour
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = false;
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<Text>().text =
-                    customization.hatItems[i].cost.ToString("N0", new CultureInfo("en-us"));
+                    Customization.hatItems[i].cost.ToString("N0", new CultureInfo("en-us"));
             }
 
         }
@@ -60,13 +60,13 @@ public class Shop : MonoBehaviour
         for (int i = 1; i < customization.faces.Length; i++)
         {
             obj = facesPanel.transform.GetChild(i - 1);
-            if (customization.faceItems[i].isBougth)
+            if (Customization.faceItems[i].isBougth)
                 obj.GetChild(1).GetComponent<Image>().color = boughtColor;
             else obj.GetChild(1).GetComponent<Image>().color = faceColor;
 
             obj.GetChild(0).GetComponent<Image>().sprite = customization.faces[i];
 
-            if (customization.faceItems[i].isBougth)
+            if (Customization.faceItems[i].isBougth)
             {
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(false);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = true;
@@ -76,7 +76,7 @@ public class Shop : MonoBehaviour
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = false;
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<Text>().text =
-                    customization.faceItems[i].cost.ToString("N0", new CultureInfo("en-us"));
+                    Customization.faceItems[i].cost.ToString("N0", new CultureInfo("en-us"));
             }
         }
     }
@@ -86,14 +86,14 @@ public class Shop : MonoBehaviour
         for (int i = 1; i < customization.bodies.Length; i++)
         {
             obj = bodiesPanel.transform.GetChild(i - 1);
-            if (customization.bodyItems[i].isBougth)
+            if (Customization.bodyItems[i].isBougth)
                 obj.GetChild(1).GetComponent<Image>().color = boughtColor;
             else obj.GetChild(1).GetComponent<Image>().color = bodyColor;
 
             obj.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>().sprite = customization.tails[i];
             obj.GetChild(0).GetChild(0).GetChild(1).GetComponent<Image>().sprite = customization.bodies[i];
 
-            if (customization.bodyItems[i].isBougth)
+            if (Customization.bodyItems[i].isBougth)
             {
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(false);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = true;
@@ -103,36 +103,36 @@ public class Shop : MonoBehaviour
                 obj.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<LocalizeStringEvent>().enabled = false;
                 obj.GetChild(1).GetChild(0).GetChild(1).GetComponent<Text>().text =
-                    customization.bodyItems[i].cost.ToString("N0", new CultureInfo("en-us"));
+                    Customization.bodyItems[i].cost.ToString("N0", new CultureInfo("en-us"));
             }
         }
     }
     public void BuyHat(int id)
     {
-        if (customization.hatItems[id].isBougth == false && Menu.coins >= customization.hatItems[id].cost)
+        if (Customization.hatItems[id].isBougth == false && Menu.coins >= Customization.hatItems[id].cost)
         {
-            customization.hatItems[id].isBougth = true;
-            Menu.coins -= customization.hatItems[id].cost;
+            Customization.hatItems[id].isBougth = true;
+            Menu.coins -= Customization.hatItems[id].cost;
             menu.UpdateCoins();
             UpdateHats();
         }
     }
     public void BuyFace(int id)
     {
-        if (customization.faceItems[id].isBougth == false && Menu.coins >= customization.faceItems[id].cost)
+        if (Customization.faceItems[id].isBougth == false && Menu.coins >= Customization.faceItems[id].cost)
         {
-            customization.faceItems[id].isBougth = true;
-            Menu.coins -= customization.faceItems[id].cost;
+            Customization.faceItems[id].isBougth = true;
+            Menu.coins -= Customization.faceItems[id].cost;
             menu.UpdateCoins();
             UpdateFaces();
         }
     }
     public void BuyBody(int id)
     {
-        if (customization.bodyItems[id].isBougth == false && Menu.coins >= customization.bodyItems[id].cost)
+        if (Customization.bodyItems[id].isBougth == false && Menu.coins >= Customization.bodyItems[id].cost)
         {
-            customization.bodyItems[id].isBougth = true;
-            Menu.coins -= customization.bodyItems[id].cost;
+            Customization.bodyItems[id].isBougth = true;
+            Menu.coins -= Customization.bodyItems[id].cost;
             menu.UpdateCoins();
             UpdateBodies();
         }
