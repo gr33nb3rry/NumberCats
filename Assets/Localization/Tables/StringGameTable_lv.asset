@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringGameTable_lv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: lv
+  m_SharedData: {fileID: 11400000, guid: 5d320fcc03ea53e45ac86dc8696cf998, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 5107510872196775997
+  m_TableData:
+  - m_Id: 8013398016
+    m_Localized: raunds {x}/{y}
+    m_Metadata:
+      m_Items:
+      - rid: 5107510872196775997
+  - m_Id: 1229440860160
+    m_Localized: "v\u0113rt\u0113jums {x}"
+    m_Metadata:
+      m_Items:
+      - rid: 5107510872196775997
+  - m_Id: 1238219538432
+    m_Localized: "iesp\u0113ja {x}%"
+    m_Metadata:
+      m_Items:
+      - rid: 5107510872196775997
+  - m_Id: 1242749386752
+    m_Localized: "sav\u0101kt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1247539281920
+    m_Localized: "tu uzvar\u0113ji"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490539960778752
+    m_Localized: "tu zaud\u0113"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490551386062848
+    m_Localized: "papilda dz\u012Bve?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490594889383936
+    m_Localized: bezmaksas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1493724116992000
+    m_Localized: citreiz
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5107510872196775997
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00c0a2dd0100000000c0a24b2001000000c062401e010000

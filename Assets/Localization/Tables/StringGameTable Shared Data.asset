@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: StringGameTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: StringGameTable
+  m_TableCollectionNameGuidString: 5d320fcc03ea53e45ac86dc8696cf998
+  m_Entries:
+  - m_Id: 8013398016
+    m_Key: round
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1229440860160
+    m_Key: score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1238219538432
+    m_Key: chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1242749386752
+    m_Key: collect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1247539281920
+    m_Key: win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490539960778752
+    m_Key: lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490551386062848
+    m_Key: extra_life
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1490594889383936
+    m_Key: free
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1493724116992000
+    m_Key: no
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5107510872196775994
+  references:
+    version: 2
+    RefIds:
+    - rid: 5107510872196775994
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1683143554457
