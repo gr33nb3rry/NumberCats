@@ -236,21 +236,21 @@ public class Game : MonoBehaviour
                 {
                     if (numbers[i, 1] < numbers[i - 1, 1])
                     {
-                        breakpoint = i;
+                        breakpoint = numbers[i, 0];
                     }
                 }
                 else if (i == 0)
                 {
                     if (numbers[i, 1] > numbers[i + 1, 1])
                     {
-                        breakpoint = i;
+                        breakpoint = numbers[i, 0];
                     }
                 }
                 else
                 {
                     if (numbers[i, 1] > numbers[i + 1, 1] || numbers[i, 1] < numbers[i - 1, 1])
                     {
-                        breakpoint = i;
+                        breakpoint = numbers[i, 0];
                     }
                 }
             }
