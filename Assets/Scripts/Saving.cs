@@ -56,6 +56,7 @@ public class Saving : MonoBehaviour
             Debug.LogException(ex);
         }
     }
+    /*
     void OnApplicationPause(bool pauseStatus)
     {
         if (pauseStatus)
@@ -63,6 +64,7 @@ public class Saving : MonoBehaviour
             Save();
         }
     }
+    */
     IEnumerator LoadMenu()
     {
         yield return new WaitForSeconds(0.1f);

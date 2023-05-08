@@ -131,6 +131,7 @@ public class Menu : MonoBehaviour
                 customizePanel.GetComponent<Animation>().Play("customizeClose");
                 yield return new WaitForSeconds(0.5f);
                 customizePanel.SetActive(false);
+                saving.Save();
                 break;
             case 1:
                 playPanel.GetComponent<Animation>().Play("playClose");
@@ -141,6 +142,7 @@ public class Menu : MonoBehaviour
                 shopPanel.GetComponent<Animation>().Play("shopClose");
                 yield return new WaitForSeconds(0.5f);
                 shopPanel.SetActive(false);
+                saving.Save();
                 break;
             case 3:
                 settingsPanel.GetComponent<Animation>().Play("settingsClose");

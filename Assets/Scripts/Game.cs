@@ -38,6 +38,7 @@ public class Game : MonoBehaviour
     int breakpoint = 100;
     [Header("Panels")]
     public Customization customization;
+    public Saving saving;
     public GameObject playPanel;
     public GameObject slotsEasy;
     public GameObject slotsMedium;
@@ -523,11 +524,13 @@ public class Game : MonoBehaviour
         if (isWon)
         {
             Menu.score += score;
+            saving.Save();
         }
         else Menu.score = 0;
         if (Menu.highScore < score)
         {
             Menu.highScore = score;
+            saving.Save();
         }
         SceneManager.LoadScene("Menu");
     }
