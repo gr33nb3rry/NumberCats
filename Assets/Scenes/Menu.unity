@@ -2978,6 +2978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customization: {fileID: 0}
+  settingsPanel: {fileID: 0}
   isStart: 0
 --- !u!114 &519420035
 MonoBehaviour:
@@ -3536,6 +3537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e792b70fb6fbf64488f81e742463f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStart: 0
   SoundsSlider: {fileID: 1773191919}
   MusicSlider: {fileID: 136328470}
   controlsLeft: {fileID: 1727552875}
@@ -15151,14 +15153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 22b2f759c46b3ba408656ef77dc4e7a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16878,14 +16880,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4201b976d8dd2e649b84f2f138042dc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
