@@ -146,4 +146,10 @@ public class Settings : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[id];
         languageActive = false;
     }
+
+    public void CloseSettings()
+    {
+        gameObject.SetActive(false);
+    }
+    
 }

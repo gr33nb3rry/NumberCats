@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.SceneManagement;
@@ -40,6 +41,8 @@ public class Game : MonoBehaviour
     public Customization customization;
     public LevelPlayAds ads;
     public Saving saving;
+    public EventTrigger settingsButton;
+    public GameObject settingsPanel;
     public GameObject playPanel;
     public GameObject slotsEasy;
     public GameObject slotsMedium;
@@ -92,10 +95,16 @@ public class Game : MonoBehaviour
         }
         roundNumber = 1;
         isWon = false;
+        settingsButton.enabled = false;
         UpdateCat();
         UpdateRoundText();
         UpdateChanceText(100);
         StartCoroutine(Starting());
+    }
+    public void OpenSettings()
+    {
+        settingsPanel.SetActive(true);
+        settingsPanel.GetComponent<Animation>().Play("settingsOpen");
     }
     private void UpdateCat()
     {
@@ -163,6 +172,7 @@ public class Game : MonoBehaviour
         StartCoroutine(RandomNumberGeneration());
         yield return new WaitForSeconds(5.5f);
         AvailableSlotShaking();
+        settingsButton.enabled = true;
     }
     IEnumerator RandomNumberGeneration()
     {
@@ -332,6 +342,7 @@ public class Game : MonoBehaviour
     }
     IEnumerator Round()
     {
+        settingsButton.enabled = false;
         round.GetComponent<Animation>().Play("roundIncrease");
         UpdateRoundText();
         Chance();
@@ -342,6 +353,7 @@ public class Game : MonoBehaviour
         StartCoroutine(RandomNumberGeneration());
         yield return new WaitForSeconds(5.5f);
         AvailableSlotShaking();
+        settingsButton.enabled = true;
     }
     private void Chance()
     {
@@ -534,6 +546,7 @@ public class Game : MonoBehaviour
         }
         Settings.gamesPlayed++;
         saving.Save();
+        Settings.isChanged = false;
         SceneManager.LoadScene("Menu");
     }
     IEnumerator CatJump()
