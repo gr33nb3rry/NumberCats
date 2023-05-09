@@ -47,6 +47,8 @@ public class Game : MonoBehaviour
     public GameObject slotsEasy;
     public GameObject slotsMedium;
     public GameObject slotsHard;
+    public GameObject slotsMediumSecond;
+    public GameObject slotsHardSecond;
     public GameObject canvas;
     public GameObject round;
     public GameObject endPanel;
@@ -79,20 +81,26 @@ public class Game : MonoBehaviour
         {
             slots = slotsEasy;
             roundCount = Random.Range(4, 7);
-            slotsEasy.SetActive(true);
         }
         else if (difficulty == 'M')
         {
-            slots = slotsMedium;
+            Debug.Log("controls " + Settings.controls);
+            if (Settings.controls == 0)
+                slots = slotsMedium;
+            else if (Settings.controls == 1)
+                slots = slotsMediumSecond;
             roundCount = Random.Range(8, 11);
-            slotsMedium.SetActive(true);
         }
         else if (difficulty == 'H')
         {
-            slots = slotsHard;
+            Debug.Log("controls " + Settings.controls);
+            if (Settings.controls == 0)
+                slots = slotsHard;
+            else if (Settings.controls == 1)
+                slots = slotsHardSecond;
             roundCount = Random.Range(11, 16);
-            slotsHard.SetActive(true);
         }
+        slots.SetActive(true);
         roundNumber = 1;
         isWon = false;
         settingsButton.enabled = false;
@@ -540,9 +548,9 @@ public class Game : MonoBehaviour
             Settings.gamesWon++;
         }
         else Menu.score = 0;
-        if (Menu.highScore < score)
+        if (Menu.highScore < Menu.score + score)
         {
-            Menu.highScore = score;
+            Menu.highScore = Menu.score + score;
         }
         Settings.gamesPlayed++;
         saving.Save();
