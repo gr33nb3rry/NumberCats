@@ -1915,6 +1915,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2002,6 +2003,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customization: {fileID: 0}
   isStart: 0
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87cb4ae72f258449a2db1717f545cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &520648454
 GameObject:
   m_ObjectHideFlags: 0
@@ -10942,6 +10955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customization: {fileID: 1636811932}
+  ads: {fileID: 519420034}
   saving: {fileID: 519420033}
   playPanel: {fileID: 156039804}
   slotsEasy: {fileID: 1636447371}

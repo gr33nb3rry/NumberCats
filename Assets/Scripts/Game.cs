@@ -38,6 +38,7 @@ public class Game : MonoBehaviour
     int breakpoint = 100;
     [Header("Panels")]
     public Customization customization;
+    public LevelPlayAds ads;
     public Saving saving;
     public GameObject playPanel;
     public GameObject slotsEasy;
@@ -444,9 +445,9 @@ public class Game : MonoBehaviour
     }
     public void ExtraLifeGet()
     {
+        ads.ShowRewardedAd();
         extraLifePanel.SetActive(false);
         StartCoroutine(ExtraLifeGetTemp());
-
     }
     IEnumerator ExtraLifeGetTemp()
     {
@@ -524,14 +525,15 @@ public class Game : MonoBehaviour
         if (isWon)
         {
             Menu.score += score;
-            saving.Save();
+            Settings.gamesWon++;
         }
         else Menu.score = 0;
         if (Menu.highScore < score)
         {
             Menu.highScore = score;
-            saving.Save();
         }
+        Settings.gamesPlayed++;
+        saving.Save();
         SceneManager.LoadScene("Menu");
     }
     IEnumerator CatJump()
