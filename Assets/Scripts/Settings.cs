@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
-    static public string language = "EN";
+    public bool isStart;
+    static public int language = 0;
     static public bool isSoundsOn = true;
     static public bool isMusicOn = true;
     static public int controls = 0;
@@ -13,6 +16,7 @@ public class Settings : MonoBehaviour
 
     private Color32 greyColor = new Color32(128, 128, 128, 255);
     private Color32 greenColor = new Color32(0, 255, 68, 255);
+    private bool languageActive = false;
 
     [Header("Sounds")]
     public GameObject SoundsSlider;
@@ -20,16 +24,23 @@ public class Settings : MonoBehaviour
     [Header("Controls")]
     public GameObject controlsLeft;
     public GameObject controlsRight;
+    [Header("language")]
+    public GameObject englishSelect;
+    public GameObject frenchSelect;
+    public GameObject latvianSelect;
+    public GameObject russianSelect;
 
     public void OnEnable()
     {
-        UpdateSettings();
+        if (isStart == false)
+            UpdateSettings();
     }
     private void UpdateSettings()
     {
         UpdateSounds();
         UpdateMusic();
         UpdateControls();
+        UpdateLanguage();
     }
     private void UpdateSounds()
     {
@@ -58,6 +69,37 @@ public class Settings : MonoBehaviour
             controlsRight.GetComponent<Image>().color = greenColor;
         }
     }
+    private void UpdateLanguage()
+    {
+        if (language == 0)
+        {
+            englishSelect.SetActive(true);
+            frenchSelect.SetActive(false);
+            latvianSelect.SetActive(false);
+            russianSelect.SetActive(false);
+        }
+        else if (language == 1)
+        {
+            englishSelect.SetActive(false);
+            frenchSelect.SetActive(true);
+            latvianSelect.SetActive(false);
+            russianSelect.SetActive(false);
+        }
+        else if (language == 2)
+        {
+            englishSelect.SetActive(false);
+            frenchSelect.SetActive(false);
+            latvianSelect.SetActive(true);
+            russianSelect.SetActive(false);
+        }
+        else if (language == 3)
+        {
+            englishSelect.SetActive(false);
+            frenchSelect.SetActive(false);
+            latvianSelect.SetActive(false);
+            russianSelect.SetActive(true);
+        }
+    }
 
 
     public void SoundsOnOff()
@@ -83,5 +125,25 @@ public class Settings : MonoBehaviour
         controls = 1;
         isChanged = true;
         UpdateControls();
+    }
+    public void LanguageChangeOnStart()
+    {
+        StartCoroutine(SetLocale(language));
+    }
+    public void LanguageChange(int id)
+    {
+        if (languageActive == true)
+            return;
+        StartCoroutine(SetLocale(id));
+        language = id;
+        isChanged = true;
+        UpdateLanguage();
+    }
+    IEnumerator SetLocale(int id)
+    {
+        languageActive = true;
+        yield return LocalizationSettings.InitializationOperation;
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[id];
+        languageActive = false;
     }
 }

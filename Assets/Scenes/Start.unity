@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -296,7 +297,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2135241ff4c8b45a31ae49ba14b312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customization: {fileID: 0}
+  settingsPanel: {fileID: 519420035}
   isStart: 1
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e792b70fb6fbf64488f81e742463f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStart: 1
+  SoundsSlider: {fileID: 0}
+  MusicSlider: {fileID: 0}
+  controlsLeft: {fileID: 0}
+  controlsRight: {fileID: 0}
+  englishSelect: {fileID: 0}
+  frenchSelect: {fileID: 0}
+  latvianSelect: {fileID: 0}
+  russianSelect: {fileID: 0}
 --- !u!1 &572444899
 GameObject:
   m_ObjectHideFlags: 0

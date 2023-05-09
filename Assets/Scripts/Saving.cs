@@ -10,6 +10,7 @@ using System.Collections;
 public class Saving : MonoBehaviour
 {
     public Customization customization;
+    public Settings settingsPanel;
     public bool isStart;
     private string cat = "";
     private string coinsScoreHighscore = "";
@@ -67,6 +68,7 @@ public class Saving : MonoBehaviour
     */
     IEnumerator LoadMenu()
     {
+        settingsPanel.LanguageChangeOnStart();
         yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("Menu");
     }
@@ -125,6 +127,8 @@ public class Saving : MonoBehaviour
         if (Settings.isMusicOn)
             settings += 1;
         else settings += 0;
+        settings += ' ';
+        settings += Settings.controls.ToString();
     }
     private void StatGenerate()
     {
@@ -210,13 +214,14 @@ public class Saving : MonoBehaviour
     private void SettingsLoad(string data)
     {
         string[] dataTemp = data.Split(' ');
-        Settings.language = dataTemp[0];
-        if (Convert.ToInt32(dataTemp[1]) == '1')
+        Settings.language = Convert.ToInt32(dataTemp[0]);
+        if (Convert.ToInt32(dataTemp[1]) == 1)
             Settings.isSoundsOn = true;
         else Settings.isSoundsOn = false;
-        if (Convert.ToInt32(dataTemp[2]) == '1')
+        if (Convert.ToInt32(dataTemp[2]) == 1)
             Settings.isMusicOn = true;
         else Settings.isMusicOn = false;
+        Settings.controls = Convert.ToInt32(dataTemp[3]);
     }
     private void StatLoad(string data)
     {

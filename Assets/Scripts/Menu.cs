@@ -13,6 +13,7 @@ public class Menu : MonoBehaviour
     static public int activePanel = 1;
     public Customization customization;
     public Saving saving;
+    public Settings settings;
     [Header("Panels")]
     public GameObject customizePanel;
     public GameObject playPanel;
