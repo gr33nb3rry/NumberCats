@@ -6,6 +6,7 @@ using UnityEngine.Localization.Components;
 public class Shop : MonoBehaviour
 {
     static public int activePanel;
+    static public bool isChanged = false;
     public Customization customization;
     public Menu menu;
     public GameObject[] panels;
@@ -113,6 +114,7 @@ public class Shop : MonoBehaviour
         {
             Customization.hatItems[id].isBougth = true;
             Menu.coins -= Customization.hatItems[id].cost;
+            isChanged = true;
             menu.UpdateCoins();
             UpdateHats();
         }
@@ -123,6 +125,7 @@ public class Shop : MonoBehaviour
         {
             Customization.faceItems[id].isBougth = true;
             Menu.coins -= Customization.faceItems[id].cost;
+            isChanged = true;
             menu.UpdateCoins();
             UpdateFaces();
         }
@@ -133,6 +136,7 @@ public class Shop : MonoBehaviour
         {
             Customization.bodyItems[id].isBougth = true;
             Menu.coins -= Customization.bodyItems[id].cost;
+            isChanged = true;
             menu.UpdateCoins();
             UpdateBodies();
         }

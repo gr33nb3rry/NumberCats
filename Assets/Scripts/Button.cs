@@ -10,6 +10,7 @@ public class Button : MonoBehaviour
     public bool isShopBuyButton;
     public bool isDifficultyButton;
     public bool isCloseDifficultyButton;
+    public bool isSettingsButton;
     public char difficulty;
     public Menu menu;
     public Shop shop;
@@ -61,7 +62,12 @@ public class Button : MonoBehaviour
         else if (isCloseDifficultyButton)
         {
             menu.CloseDifficulty();
-
+        }
+        else if (isSettingsButton)
+        {
+            audioSource.clip = tapSound;
+            audioSource.Play();
+            GetComponent<Animation>().Play("clickButtonScale");
         }
     }
 }

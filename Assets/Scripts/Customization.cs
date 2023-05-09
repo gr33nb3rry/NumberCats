@@ -43,6 +43,7 @@ public class Customization : MonoBehaviour
     static public List<int> hatBought = new List<int>();
     static public List<int> faceBought = new List<int>();
     static public List<int> bodyBought = new List<int>();
+    static public bool isChanged = false;
     [Header("Sprites")]
     public Sprite[] hats;
     public Sprite[] bodies;
@@ -115,6 +116,7 @@ public class Customization : MonoBehaviour
                 if (hatBought[i] == hatChosen)
                 {
                     hatChosen = hatBought[i+1];
+                    isChanged = true;
                     break;
                 }
             }
@@ -130,6 +132,7 @@ public class Customization : MonoBehaviour
                 if (hatBought[i] == hatChosen)
                 {
                     hatChosen = hatBought[i - 1];
+                    isChanged = true;
                     break;
                 }
             }
@@ -169,6 +172,7 @@ public class Customization : MonoBehaviour
                 if (bodyBought[i] == bodyChosen)
                 {
                     bodyChosen = bodyBought[i + 1];
+                    isChanged = true;
                     break;
                 }
             }
@@ -184,6 +188,7 @@ public class Customization : MonoBehaviour
                 if (bodyBought[i] == bodyChosen)
                 {
                     bodyChosen = bodyBought[i - 1];
+                    isChanged = true;
                     break;
                 }
             }
@@ -212,6 +217,7 @@ public class Customization : MonoBehaviour
                 if (faceBought[i] == faceChosen)
                 {
                     faceChosen = faceBought[i + 1];
+                    isChanged = true;
                     break;
                 }
             }
@@ -227,6 +233,7 @@ public class Customization : MonoBehaviour
                 if (faceBought[i] == faceChosen)
                 {
                     faceChosen = faceBought[i - 1];
+                    isChanged = true;
                     break;
                 }
             }
