@@ -8,23 +8,23 @@ public class Customization : MonoBehaviour
     {
         new ShopItem(cost: 0){isBougth = true},
         new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
-        new ShopItem(cost: 100),
+        new ShopItem(cost: 200),
+        new ShopItem(cost: 300),
+        new ShopItem(cost: 400),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
     };
     static public ShopItem[] faceItems = new ShopItem[]
     {
         new ShopItem(cost: 0){isBougth = true},
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
+        new ShopItem(cost: 20),
+        new ShopItem(cost: 30),
+        new ShopItem(cost: 40),
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
@@ -33,12 +33,12 @@ public class Customization : MonoBehaviour
     static public ShopItem[] bodyItems = new ShopItem[]
     {
         new ShopItem(cost: 0){isBougth = true},
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
-        new ShopItem(cost: 50),
+        new ShopItem(cost: 100),
+        new ShopItem(cost: 250),
+        new ShopItem(cost: 600),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
     };
     static public int hatChosen;
     static public int faceChosen;
