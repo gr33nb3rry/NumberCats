@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using System.Globalization;
+using System.Collections.Generic;
 
 public class Menu : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class Menu : MonoBehaviour
     {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
+        customization.CalculateBoughtCount();
         CheckHighScore();
         UpdateCoins();
         UpdateHighScore();
@@ -147,6 +149,7 @@ public class Menu : MonoBehaviour
                 shopPanel.GetComponent<Animation>().Play("shopClose");
                 yield return new WaitForSeconds(0.5f);
                 shopPanel.SetActive(false);
+                customization.CalculateBoughtCount();
                 if (Shop.isChanged == true)
                 {
                     saving.Save();

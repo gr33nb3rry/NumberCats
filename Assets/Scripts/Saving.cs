@@ -68,6 +68,7 @@ public class Saving : MonoBehaviour
     */
     IEnumerator LoadMenu()
     {
+        yield return new WaitForSeconds(0.1f);
         settingsPanel.LanguageChangeOnStart();
         yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("Menu");

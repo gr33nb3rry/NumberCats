@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8672,7 +8672,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101103819}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
@@ -9803,7 +9803,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1242867108}
   m_OnClick:
     m_PersistentCalls:
@@ -9976,7 +9976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12914,11 +12914,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1709ca3de41c3094f947d2034765c11c, type: 3}
   - {fileID: 21300000, guid: 7ea693cbc8ce23741b6417992748d8e3, type: 3}
   - {fileID: 21300000, guid: a0234dd9ebbcd534ba4235eed5c19519, type: 3}
+  - {fileID: 21300000, guid: 2984018c6764cf348aa61d0e3e7c256d, type: 3}
+  - {fileID: 21300000, guid: efdcd5987d4c07c4eb0d7d4445e02780, type: 3}
+  - {fileID: 21300000, guid: e8a568e144c06d04d8c6097936fe51c9, type: 3}
   tails:
   - {fileID: 21300000, guid: c19ea304cc09214418c632fb045d6959, type: 3}
   - {fileID: 21300000, guid: ca009e528de612b42a15c3549ce7c82f, type: 3}
   - {fileID: 21300000, guid: a4f11467400a3dc4b986a0aa559e7afb, type: 3}
   - {fileID: 21300000, guid: ebbad834d4dd38949a3da1817e62cecc, type: 3}
+  - {fileID: 21300000, guid: a78747b8edc428f48b5a46f9f80bbac0, type: 3}
+  - {fileID: 21300000, guid: 77c88d83380b3c242a303f825b92f8f3, type: 3}
+  - {fileID: 21300000, guid: 1565b32f4a14d984c9f5c8f8a109ceb2, type: 3}
   faces:
   - {fileID: 21300000, guid: 55515acdd10d2c34cb2d0df08e8b83bd, type: 3}
   - {fileID: 21300000, guid: 87ec22397c0bbd34ba6dcb291ae81ab9, type: 3}
@@ -17463,7 +17469,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1242867108}
   m_OnClick:
     m_PersistentCalls:

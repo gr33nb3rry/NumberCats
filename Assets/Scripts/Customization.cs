@@ -36,6 +36,9 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
     };
     static public int hatChosen;
     static public int faceChosen;
@@ -66,6 +69,10 @@ public class Customization : MonoBehaviour
     static public Vector3 smallHatScale = new Vector3(0.6f, 0.6f, 0.6f);
     static public Vector2 smallHatPos = new Vector2(136, -252);
 
+    void Start()
+    {
+        Debug.Log($"hat: {hatBought.Count}\tface: {faceBought.Count}\tbody: {bodyBought.Count}\t");
+    }
     void OnEnable()
     {
         CalculateBoughtCount();
@@ -74,7 +81,7 @@ public class Customization : MonoBehaviour
         UpdateBody();
         UpdateStats();
     }
-    private void CalculateBoughtCount()
+    public void CalculateBoughtCount()
     {
         hatBought.Clear();
         faceBought.Clear();

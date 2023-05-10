@@ -555,6 +555,11 @@ public class Game : MonoBehaviour
         Settings.gamesPlayed++;
         saving.Save();
         Settings.isChanged = false;
+        StartCoroutine(LoadMenu());
+    }
+    IEnumerator LoadMenu()
+    {
+        yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("Menu");
     }
     IEnumerator CatJump()
