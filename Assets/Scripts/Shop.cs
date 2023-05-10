@@ -18,6 +18,10 @@ public class Shop : MonoBehaviour
     private Color32 bodyColor = new Color32(255, 23, 36, 255);
     private Color32 boughtColor = new Color32(128, 128, 128, 255);
 
+    public void Start()
+    {
+        activePanel = 0;
+    }
     public void OnEnable()
     {
         UpdateShop();

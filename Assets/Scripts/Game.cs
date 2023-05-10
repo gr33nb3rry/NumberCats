@@ -219,6 +219,7 @@ public class Game : MonoBehaviour
     }
     public void PutRandomNumber(int id)
     {
+        settingsButton.enabled = false;
         StopSlotShaking();
         slots.transform.GetChild(id).GetChild(2).GetChild(0).GetComponent<Text>().text =
             randomNumber.ToString();
