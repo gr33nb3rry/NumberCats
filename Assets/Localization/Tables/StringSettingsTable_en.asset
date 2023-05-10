@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringSettingsTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: a1d548670f8a90b40b19385c978a9003, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 35259596800
+    m_Localized: music & sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 109804961792
+    m_Localized: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121192497152
+    m_Localized: sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 740829609984
+    m_Localized: language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863617859584
+    m_Localized: controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 917015543808
+    m_Localized: other
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935499841536
+    m_Localized: rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967603044352
+    m_Localized: attributes
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

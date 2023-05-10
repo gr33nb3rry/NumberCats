@@ -13,6 +13,7 @@ public class Settings : MonoBehaviour
     static public int gamesPlayed;
     static public int gamesWon;
     static public bool isChanged = false;
+    static public string playerID = "";
 
     private Color32 greyColor = new Color32(128, 128, 128, 255);
     private Color32 greenColor = new Color32(0, 255, 68, 255);
@@ -29,6 +30,8 @@ public class Settings : MonoBehaviour
     public GameObject frenchSelect;
     public GameObject latvianSelect;
     public GameObject russianSelect;
+    [Header("ID")]
+    public Text idText;
 
     public void OnEnable()
     {
@@ -41,6 +44,7 @@ public class Settings : MonoBehaviour
         UpdateMusic();
         UpdateControls();
         UpdateLanguage();
+        idText.text = "ID: " + playerID;
     }
     private void UpdateSounds()
     {

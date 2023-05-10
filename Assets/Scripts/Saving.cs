@@ -45,6 +45,7 @@ public class Saving : MonoBehaviour
             Load();
 
             // Shows how to get the playerID
+            Settings.playerID = AuthenticationService.Instance.PlayerId;
             Debug.Log($"PlayerID: {AuthenticationService.Instance.PlayerId}");
 
         }

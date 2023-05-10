@@ -27,6 +27,12 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-lv
+  - m_GUID: f517fd566be16f5439a03956715545f1
+    m_Address: StringSettingsTable_lv
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-lv
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 63331f607b7ca0d4ba7f91257e925f05, type: 2}
   m_SchemaSet:
