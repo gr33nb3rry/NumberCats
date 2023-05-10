@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1431648350}
+      - m_Target: {fileID: 608767201}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -4429,7 +4429,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1431648350}
+      - m_Target: {fileID: 621571167}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -11975,7 +11975,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1431648350}
+      - m_Target: {fileID: 1436178227}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1

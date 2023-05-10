@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758098460}
+      - m_Target: {fileID: 293202124}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 999229171}
 --- !u!114 &293202125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6160,7 +6160,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 999229171}
 --- !u!111 &758098461
 Animation:
   m_ObjectHideFlags: 0
@@ -9316,7 +9316,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758098460}
+      - m_Target: {fileID: 1165601758}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -9363,7 +9363,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 999229171}
 --- !u!114 &1165601759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12117,7 +12117,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758098460}
+      - m_Target: {fileID: 1564094217}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -12164,7 +12164,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 999229171}
 --- !u!114 &1564094218
 MonoBehaviour:
   m_ObjectHideFlags: 0
