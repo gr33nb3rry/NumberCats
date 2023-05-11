@@ -18,6 +18,17 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 500),
         new ShopItem(cost: 500),
         new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
     };
     static public ShopItem[] faceItems = new ShopItem[]
     {

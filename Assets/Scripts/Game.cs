@@ -41,6 +41,7 @@ public class Game : MonoBehaviour
     public Customization customization;
     public LevelPlayAds ads;
     public Saving saving;
+    public Settings settings;
     public EventTrigger settingsButton;
     public GameObject settingsPanel;
     public GameObject playPanel;
@@ -74,13 +75,17 @@ public class Game : MonoBehaviour
     public AudioSource coinsAudio;
     public AudioSource roundAudio;
     public AudioSource randomNumberAudio;
+    public AudioClip[] music;
 
     public void Start()
     {
+        settings.CheckForSounds();
+        settings.CheckForMusic();
         if (difficulty == 'E')
         {
             slots = slotsEasy;
             roundCount = Random.Range(4, 7);
+            settings.audioMusicSource.clip = music[0];
         }
         else if (difficulty == 'M')
         {
@@ -90,6 +95,7 @@ public class Game : MonoBehaviour
             else if (Settings.controls == 1)
                 slots = slotsMediumSecond;
             roundCount = Random.Range(8, 11);
+            settings.audioMusicSource.clip = music[1];
         }
         else if (difficulty == 'H')
         {
@@ -99,7 +105,9 @@ public class Game : MonoBehaviour
             else if (Settings.controls == 1)
                 slots = slotsHardSecond;
             roundCount = Random.Range(11, 16);
+            settings.audioMusicSource.clip = music[2];
         }
+        settings.audioMusicSource.Play();
         slots.SetActive(true);
         roundNumber = 1;
         isWon = false;

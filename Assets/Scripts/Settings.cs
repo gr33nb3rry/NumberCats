@@ -26,6 +26,8 @@ public class Settings : MonoBehaviour
     [Header("Sounds")]
     public GameObject SoundsSlider;
     public GameObject MusicSlider;
+    public AudioSource[] audioSoundsSources;
+    public AudioSource audioMusicSource;
     [Header("Controls")]
     public GameObject controlsLeft;
     public GameObject controlsRight;
@@ -110,18 +112,47 @@ public class Settings : MonoBehaviour
         }
     }
 
-
+    public void CheckForSounds()
+    {
+        if (isSoundsOn)
+        {
+            for (int i = 0; i < audioSoundsSources.Length; i++)
+            {
+                audioSoundsSources[i].volume = 1;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < audioSoundsSources.Length; i++)
+            {
+                audioSoundsSources[i].volume = 0;
+            }
+        }
+    }
+    public void CheckForMusic()
+    {
+        if (isMusicOn)
+        {
+            audioMusicSource.volume = 0.3f;
+        }
+        else
+        {
+            audioMusicSource.volume = 0;
+        }
+    }
     public void SoundsOnOff()
     {
         isSoundsOn = !isSoundsOn;
         isChanged = true;
         UpdateSounds();
+        CheckForSounds();
     }
     public void MusicOnOff()
     {
         isMusicOn = !isMusicOn;
         isChanged = true;
         UpdateMusic();
+        CheckForMusic();
     }
     public void ControlsToLeft()
     {

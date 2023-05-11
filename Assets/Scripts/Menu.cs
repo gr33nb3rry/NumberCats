@@ -53,6 +53,8 @@ public class Menu : MonoBehaviour
         UpdateHighScore();
         UpdateScore();
         UpdateCat();
+        settings.CheckForSounds();
+        settings.CheckForMusic();
     }
     private void CheckHighScore()
     {
