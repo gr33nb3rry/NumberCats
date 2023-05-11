@@ -134,9 +134,17 @@ public class Saving : MonoBehaviour
     }
     private void StatGenerate()
     {
-        stat += Settings.gamesPlayed.ToString();
+        stat += Settings.gamesPlayedEasy.ToString();
         stat += ' ';
-        stat += Settings.gamesWon.ToString();
+        stat += Settings.gamesWonEasy.ToString();
+        stat += ' ';
+        stat += Settings.gamesPlayedMedium.ToString();
+        stat += ' ';
+        stat += Settings.gamesWonMedium.ToString();
+        stat += ' ';
+        stat += Settings.gamesPlayedHard.ToString();
+        stat += ' ';
+        stat += Settings.gamesWonHard.ToString();
     }
     private void HatBoughtGenerate()
     {
@@ -228,8 +236,12 @@ public class Saving : MonoBehaviour
     private void StatLoad(string data)
     {
         string[] dataTemp = data.Split(' ');
-        Settings.gamesPlayed = Convert.ToInt32(dataTemp[0]);
-        Settings.gamesWon = Convert.ToInt32(dataTemp[1]);
+        Settings.gamesPlayedEasy = Convert.ToInt32(dataTemp[0]);
+        Settings.gamesWonEasy = Convert.ToInt32(dataTemp[1]);
+        Settings.gamesPlayedMedium = Convert.ToInt32(dataTemp[2]);
+        Settings.gamesWonMedium = Convert.ToInt32(dataTemp[3]);
+        Settings.gamesPlayedHard = Convert.ToInt32(dataTemp[4]);
+        Settings.gamesWonHard = Convert.ToInt32(dataTemp[5]);
     }
     private void HatBoughtLoad(string data)
     {

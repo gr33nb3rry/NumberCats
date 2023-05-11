@@ -10,8 +10,12 @@ public class Settings : MonoBehaviour
     static public bool isSoundsOn = true;
     static public bool isMusicOn = true;
     static public int controls = 0;
-    static public int gamesPlayed;
-    static public int gamesWon;
+    static public int gamesPlayedEasy;
+    static public int gamesWonEasy;
+    static public int gamesPlayedMedium;
+    static public int gamesWonMedium;
+    static public int gamesPlayedHard;
+    static public int gamesWonHard;
     static public bool isChanged = false;
     static public string playerID = "";
 
@@ -30,7 +34,8 @@ public class Settings : MonoBehaviour
     public GameObject frenchSelect;
     public GameObject latvianSelect;
     public GameObject russianSelect;
-    [Header("ID")]
+    [Header("Other")]
+    public GameObject RulesPanel;
     public Text idText;
 
     public void OnEnable()
@@ -150,7 +155,14 @@ public class Settings : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[id];
         languageActive = false;
     }
-
+    public void RulesOpen()
+    {
+        RulesPanel.SetActive(true);
+    }
+    public void RulesClose()
+    {
+        RulesPanel.SetActive(false);
+    }
     public void CloseSettings()
     {
         gameObject.SetActive(false);

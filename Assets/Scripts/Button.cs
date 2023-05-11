@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     public bool isPlayButton;
+    public bool isRankButton;
     public bool isFooterButton;
     public bool isShopCategoryButton;
     public bool isShopBuyButton;
@@ -24,8 +25,14 @@ public class Button : MonoBehaviour
             audioSource.Play();
             GetComponent<Animation>().Stop();
             GetComponent<Animation>().Play("clickButtonPlay");
-            menu.CloseActivePanel();
-            menu.Invoke("ChooseDifficulty", 0.5f);
+            menu.Invoke("CloseActivePanel", 0.91f);
+            menu.Invoke("ChooseDifficulty", 1.41f);
+        }
+        else if (isRankButton)
+        {
+            audioSource.clip = tapSound;
+            audioSource.Play();
+            GetComponent<Animation>().Play("clickButtonPlay");
         }
         else if (isFooterButton)
         {

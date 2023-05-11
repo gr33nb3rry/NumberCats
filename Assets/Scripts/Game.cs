@@ -546,14 +546,27 @@ public class Game : MonoBehaviour
         if (isWon)
         {
             Menu.score += score;
-            Settings.gamesWon++;
         }
         else Menu.score = 0;
         if (Menu.highScore < Menu.score + score)
         {
             Menu.highScore = Menu.score + score;
         }
-        Settings.gamesPlayed++;
+        if (difficulty == 'E')
+        {
+            if (isWon) Settings.gamesWonEasy++;
+            Settings.gamesPlayedEasy++;
+        }
+        else if (difficulty == 'M')
+        {
+            if (isWon) Settings.gamesWonMedium++;
+            Settings.gamesPlayedMedium++;
+        }
+        else if (difficulty == 'H')
+        {
+            if (isWon) Settings.gamesWonHard++;
+            Settings.gamesPlayedHard++;
+        }
         saving.Save();
         Settings.isChanged = false;
         StartCoroutine(LoadMenu());

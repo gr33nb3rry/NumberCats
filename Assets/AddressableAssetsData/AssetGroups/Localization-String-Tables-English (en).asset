@@ -33,6 +33,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+  - m_GUID: 35089d1103b2b514aa3240d42a8fe858
+    m_Address: StringRankTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 63331f607b7ca0d4ba7f91257e925f05, type: 2}
   m_SchemaSet:
