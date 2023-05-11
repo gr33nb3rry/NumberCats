@@ -33,6 +33,8 @@ public class Ranks : MonoBehaviour
     private void UpdateRankEasy()
     {
         float wlRate = (float)Settings.gamesWonEasy / Settings.gamesPlayedEasy * 100;
+        if (Settings.gamesPlayedEasy == 0)
+            wlRate = 0;
         winLoseRateEasyText.StringReference.Add("x",
                 new FloatVariable { Value = (float)System.Math.Round(wlRate, 1) });
         winLoseRateEasyText.StringReference.Add("w",
@@ -49,6 +51,8 @@ public class Ranks : MonoBehaviour
     private void UpdateRankMedium()
     {
         float wlRate = (float)Settings.gamesWonMedium / Settings.gamesPlayedMedium * 100;
+        if (Settings.gamesPlayedMedium == 0)
+            wlRate = 0;
         winLoseRateMediumText.StringReference.Add("x",
                 new FloatVariable { Value = (float)System.Math.Round(wlRate, 1) });
         winLoseRateMediumText.StringReference.Add("w",
@@ -65,6 +69,8 @@ public class Ranks : MonoBehaviour
     private void UpdateRankHard()
     {
         float wlRate = (float)Settings.gamesWonHard / Settings.gamesPlayedHard * 100;
+        if (Settings.gamesPlayedHard == 0)
+            wlRate = 0;
         winLoseRateHardText.StringReference.Add("x",
                 new FloatVariable { Value = (float)System.Math.Round(wlRate, 1) });
         winLoseRateHardText.StringReference.Add("w",
