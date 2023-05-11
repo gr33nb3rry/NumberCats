@@ -1843,7 +1843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -3954,7 +3953,6 @@ MonoBehaviour:
   frenchSelect: {fileID: 463749651}
   latvianSelect: {fileID: 611075727}
   russianSelect: {fileID: 1874915273}
-  RulesPanel: {fileID: 0}
   idText: {fileID: 1014017640}
 --- !u!111 &548348634
 Animation:
@@ -5049,7 +5047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -6155,7 +6152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -9439,7 +9435,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -9824,7 +9819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -12242,7 +12236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -12996,19 +12989,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0ccaedc8b11eec34a85b4811644caa64, type: 3}
   - {fileID: 21300000, guid: ede357ddd289c3b48b76cc2adec5bf0f, type: 3}
   - {fileID: 21300000, guid: 3cb5d83c07f8aee4b8261b9e4d9e2c4d, type: 3}
-  - {fileID: 21300000, guid: 5287467a009eccd43ab4692cd274aff8, type: 3}
   - {fileID: 21300000, guid: 439302e402b24e4439f358c59835cfde, type: 3}
   - {fileID: 21300000, guid: 924f9479316a8fc4e92a74de19f7e4bf, type: 3}
-  - {fileID: 21300000, guid: 644c47e4bb1ffae4ab5f0e7027d9c357, type: 3}
-  - {fileID: 21300000, guid: 9f574f24c7048544985889580aa167c4, type: 3}
-  - {fileID: 21300000, guid: ca7d5f9f65dbeb147b680779c7440c71, type: 3}
-  - {fileID: 21300000, guid: 63e562a4152beb6449c4e0b12d89bb50, type: 3}
-  - {fileID: 21300000, guid: be4b55211d30a1846b88b0f5a3f51d12, type: 3}
-  - {fileID: 21300000, guid: cfeb6ba289f4e1e4ab466049ee8bbbec, type: 3}
-  - {fileID: 21300000, guid: 481dfe29b0467d04aa124d7399b30915, type: 3}
-  - {fileID: 21300000, guid: 6a4aad2a21cf87f43bb44ec0d729dd08, type: 3}
-  - {fileID: 21300000, guid: 55f50e225f968d542af1a59fb34459d0, type: 3}
-  - {fileID: 21300000, guid: 0786391000a66be4b86a0d8b2697f2dc, type: 3}
   bodies:
   - {fileID: 21300000, guid: fd6cb9301ef64b948aa136923766b53e, type: 3}
   - {fileID: 21300000, guid: 1709ca3de41c3094f947d2034765c11c, type: 3}
@@ -13017,9 +12999,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2984018c6764cf348aa61d0e3e7c256d, type: 3}
   - {fileID: 21300000, guid: efdcd5987d4c07c4eb0d7d4445e02780, type: 3}
   - {fileID: 21300000, guid: e8a568e144c06d04d8c6097936fe51c9, type: 3}
-  - {fileID: 21300000, guid: c0eb708acb382d441b227554f82ced3b, type: 3}
-  - {fileID: 21300000, guid: ce98e6b1843cf8b4a8c99839e967cd0b, type: 3}
-  - {fileID: 21300000, guid: b3e88ec55b66ee84280bef28d636ca8e, type: 3}
   tails:
   - {fileID: 21300000, guid: c19ea304cc09214418c632fb045d6959, type: 3}
   - {fileID: 21300000, guid: ca009e528de612b42a15c3549ce7c82f, type: 3}
@@ -13028,9 +13007,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a78747b8edc428f48b5a46f9f80bbac0, type: 3}
   - {fileID: 21300000, guid: 77c88d83380b3c242a303f825b92f8f3, type: 3}
   - {fileID: 21300000, guid: 1565b32f4a14d984c9f5c8f8a109ceb2, type: 3}
-  - {fileID: 21300000, guid: 69e50d7ac122bb540a051a9711a91471, type: 3}
-  - {fileID: 21300000, guid: e7297ecae36dc684b8e42c7227f18a99, type: 3}
-  - {fileID: 21300000, guid: b6d7e694d5b8f2246b77fe1f7ba40b73, type: 3}
   faces:
   - {fileID: 21300000, guid: 55515acdd10d2c34cb2d0df08e8b83bd, type: 3}
   - {fileID: 21300000, guid: 87ec22397c0bbd34ba6dcb291ae81ab9, type: 3}
@@ -17509,7 +17485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
-  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
