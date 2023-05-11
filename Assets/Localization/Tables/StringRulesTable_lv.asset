@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringRulesTable_lv
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: lv
+  m_SharedData: {fileID: 11400000, guid: b39b4619dd6ea204eb464efb328ad89c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20113965056
+    m_Localized: "sare\u017E\u0123\u012Bt\u012Bbas l\u012Bmenis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49457315840
+    m_Localized: "sp\u0113l\u0113\u0161anas process"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65060126720
+    m_Localized: "papildu dz\u012Bve"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92021112832
+    m_Localized: "sp\u0113les beiga"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1454771453952
+    m_Localized: "1. Katr\u0101 raund\u0101 tiek \u0123ener\u0113ts nejau\u0161s
+      skaitlis no 0 l\u012Bdz 1000.\n\n2. Sp\u0113l\u0113t\u0101js izv\u0113las \u0161\u016Bnu,
+      kur\u0101 vi\u0146\u0161 v\u0113las ievietot skaitli.\n\n3. Ja visi skait\u013Ci
+      lodzi\u0146os sakr\u012Bt sec\u012Bb\u0101 no zem\u0101ka uz augst\u0101ku,
+      sp\u0113l\u0113t\u0101js sa\u0146em punktus un mon\u0113tas. Punktu skaits
+      tiek apr\u0113\u0137in\u0101ts p\u0113c formulas: Rezult\u0101ts = rezult\u0101ts
+      + k\u0101rtas skaitlis. Mon\u0113tu skaits tiek palielin\u0101ts par k\u0101rt\u0113j\u0101
+      raund\u0101 nopeln\u012Bto punktu skaitu:\nmon\u0113tas = mon\u0113tas + rezult\u0101ts.\n\n4.
+      Ja sp\u0113l\u0113t\u0101js izv\u0113las nepareizo \u0161\u016Bnu un p\u0101rk\u0101pj
+      skait\u013Cu sec\u012Bbu, sp\u0113le beidzas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1458718294016
+    m_Localized: "Sp\u0113l\u0113t\u0101js var izmantot papildu dz\u012Bv\u012Bbu,
+      lai labotu k\u013C\u016Bdu un turpin\u0101tu sp\u0113li. Lai to izdar\u012Btu,
+      skatieties rekl\u0101mu, un nepareizaj\u0101 lodzi\u0146\u0101 eso\u0161ais
+      skaitlis tiks aizst\u0101ts ar pareizo skaitli."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1461905965056
+    m_Localized: "1. sp\u0113le pievieno sp\u0113l\u0113t\u0101ja mon\u0113t\u0101m
+      t\u0101s mon\u0113tas, ko vi\u0146\u0161 nopeln\u012Bjis sp\u0113les laik\u0101,
+      pat ja vi\u0146\u0161 zaud\u0113.\n\n2. Ja sp\u0113le ir uzvar\u0113ta, sp\u0113l\u0113t\u0101ja
+      sp\u0113l\u0113 nopeln\u012Btie punkti tiek pieskait\u012Bti sp\u0113l\u0113t\u0101ja
+      kop\u0113jam rezult\u0101tam un tiek veikta rekorda p\u0101rbaude: ja pa\u0161reiz\u0113jais
+      kop\u0113jais rezult\u0101ts ir liel\u0101ks par rekordu, tad rekords = kop\u0113jais
+      rezult\u0101ts.\n\n3. Ja sp\u0113le tiek zaud\u0113ta, tiek p\u0101rbaud\u012Bts,
+      vai kop\u0113jais rezult\u0101ts + rezult\u0101ts sp\u0113l\u0113 ir liel\u0101ks
+      par rekordu vai n\u0113. Ja tas ir liel\u0101ks, tad rekords = kop\u0113jais
+      rezult\u0101ts + sp\u0113les rezult\u0101ts. Un kop\u0113jais rezult\u0101ts
+      tiek atjaunots l\u012Bdz nullei."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2537749135360
+    m_Localized: raundi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2540198608896
+    m_Localized: vietas
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

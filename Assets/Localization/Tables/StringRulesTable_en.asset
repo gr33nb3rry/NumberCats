@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringRulesTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b39b4619dd6ea204eb464efb328ad89c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20113965056
+    m_Localized: difficulty level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49457315840
+    m_Localized: gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65060126720
+    m_Localized: extra life
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92021112832
+    m_Localized: end of game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1454771453952
+    m_Localized: '1. Each round generates a random number from 0 to 1000.
+
+
+      2.
+      The player chooses the cell in which he wants to place the number.
+
+
+      3.
+      If all the numbers in the cells go in order from lower to higher, the player
+      gets points and coins. Points are calculated by the formula: score = score
+      + round number. The number of coins is increased by the number of points earned
+      in the current round:
+
+      coins = coins + score.
+
+
+      4. If a player
+      chooses the wrong cell and breaks the order of the numbers, the game ends.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1458718294016
+    m_Localized: The player can use an extra life to correct the error and continue
+      the game. To do this, watch the advertisement and the number in the wrong cell
+      will be replaced by the correct number.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1461905965056
+    m_Localized: '1. the game adds to the player''s coins the coins he earned during
+      the game, even if he lost.
+
+
+      2. If the game is won, the score he earned
+      in the game is added to the player''s total score and there is a check on the
+      record: if the current total score is greater than the record, then the record
+      = total score.
+
+
+      3. if the game is lost, the game checks whether the
+      total score + score in the game is greater than the record or not. If greater,
+      then record = total score + game score. And resets the total score to zero.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2537749135360
+    m_Localized: rounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2540198608896
+    m_Localized: slots
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

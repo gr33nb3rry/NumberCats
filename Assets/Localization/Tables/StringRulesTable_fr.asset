@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringRulesTable_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: b39b4619dd6ea204eb464efb328ad89c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20113965056
+    m_Localized: "niveau de difficult\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49457315840
+    m_Localized: jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65060126720
+    m_Localized: "vie suppl\xE9mentaire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92021112832
+    m_Localized: fin du jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1454771453952
+    m_Localized: "1. Un nombre al\xE9atoire entre 0 et 1000 est g\xE9n\xE9r\xE9 \xE0
+      chaque tour.\n\n2 Le joueur choisit la case dans laquelle il veut placer le
+      nombre.\n\n3) Si tous les nombres dans les cases vont dans l'ordre du plus
+      petit au plus grand, le joueur obtient des points et des pi\xE8ces. Les points
+      sont calcul\xE9s selon la formule suivante score = score + chiffre rond. Le
+      nombre de pi\xE8ces est augment\xE9 du nombre de points gagn\xE9s dans le tour
+      en cours :\npi\xE8ces = pi\xE8ces + score.\n\n4. Si un joueur choisit la mauvaise
+      case et rompt l'ordre des chiffres, le jeu s'arr\xEAte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1458718294016
+    m_Localized: "Le joueur peut utiliser une vie suppl\xE9mentaire pour corriger
+      l'erreur et continuer le jeu. Pour ce faire, il suffit de regarder la publicit\xE9
+      et le nombre dans la mauvaise case sera remplac\xE9 par le nombre correct."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1461905965056
+    m_Localized: "1. le jeu ajoute aux pi\xE8ces du joueur les pi\xE8ces qu'il a
+      gagn\xE9es pendant le jeu, m\xEAme s'il perd.\n\n2. Si la partie est gagn\xE9e,
+      le score que le joueur a obtenu dans la partie est ajout\xE9 au score total
+      du joueur et un contr\xF4le du record est effectu\xE9 : si le score total actuel
+      est sup\xE9rieur au record, le record = score total.\n\n3. si la partie est
+      perdue, le jeu v\xE9rifie si le score total + le score dans la partie est sup\xE9rieur
+      au record ou non. S'il est sup\xE9rieur, le record = score total + score du
+      jeu. Et remet le score total \xE0 z\xE9ro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2537749135360
+    m_Localized: rondes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2540198608896
+    m_Localized: cellules
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

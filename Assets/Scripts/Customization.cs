@@ -39,6 +39,9 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 1000),
         new ShopItem(cost: 1000),
         new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
     };
     static public int hatChosen;
     static public int faceChosen;
