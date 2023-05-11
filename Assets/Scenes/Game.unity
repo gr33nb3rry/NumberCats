@@ -1843,6 +1843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -3953,6 +3954,7 @@ MonoBehaviour:
   frenchSelect: {fileID: 463749651}
   latvianSelect: {fileID: 611075727}
   russianSelect: {fileID: 1874915273}
+  RulesPanel: {fileID: 0}
   idText: {fileID: 1014017640}
 --- !u!111 &548348634
 Animation:
@@ -5047,6 +5049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -6152,6 +6155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -9435,6 +9439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -9819,6 +9824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -12236,6 +12242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
@@ -12999,6 +13006,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2984018c6764cf348aa61d0e3e7c256d, type: 3}
   - {fileID: 21300000, guid: efdcd5987d4c07c4eb0d7d4445e02780, type: 3}
   - {fileID: 21300000, guid: e8a568e144c06d04d8c6097936fe51c9, type: 3}
+  - {fileID: 21300000, guid: 0a03152bb2ea7a94c8feae21aeb56646, type: 3}
+  - {fileID: 21300000, guid: 754e346b8b5a3d74bbba882d05068f40, type: 3}
+  - {fileID: 21300000, guid: 640c5716e8469a144ba271f106b7ab37, type: 3}
   tails:
   - {fileID: 21300000, guid: c19ea304cc09214418c632fb045d6959, type: 3}
   - {fileID: 21300000, guid: ca009e528de612b42a15c3549ce7c82f, type: 3}
@@ -13007,6 +13017,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a78747b8edc428f48b5a46f9f80bbac0, type: 3}
   - {fileID: 21300000, guid: 77c88d83380b3c242a303f825b92f8f3, type: 3}
   - {fileID: 21300000, guid: 1565b32f4a14d984c9f5c8f8a109ceb2, type: 3}
+  - {fileID: 21300000, guid: b20061479dea70d429cb5411696b586a, type: 3}
+  - {fileID: 21300000, guid: cdcedaf1d1e01354fad76ba191ec7767, type: 3}
+  - {fileID: 21300000, guid: f16a4095e7f827d4ab17c776d842ee2b, type: 3}
   faces:
   - {fileID: 21300000, guid: 55515acdd10d2c34cb2d0df08e8b83bd, type: 3}
   - {fileID: 21300000, guid: 87ec22397c0bbd34ba6dcb291ae81ab9, type: 3}
@@ -17485,6 +17498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayButton: 0
+  isRankButton: 0
   isFooterButton: 0
   isShopCategoryButton: 0
   isShopBuyButton: 0
