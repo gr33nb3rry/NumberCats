@@ -50,6 +50,14 @@ MonoBehaviour:
     m_Localized: attributes
     m_Metadata:
       m_Items: []
+  - m_Id: 701742717255680
+    m_Localized: visuals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702961628135424
+    m_Localized: dark theme
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

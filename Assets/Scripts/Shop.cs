@@ -69,7 +69,8 @@ public class Shop : MonoBehaviour
                 obj.GetChild(1).GetComponent<Image>().color = boughtColor;
             else obj.GetChild(1).GetComponent<Image>().color = faceColor;
 
-            obj.GetChild(0).GetComponent<Image>().sprite = customization.faces[i];
+            obj.GetChild(0).GetChild(0).GetComponent<Image>().sprite = customization.bodies[Customization.bodyChosen];
+            obj.GetChild(0).GetChild(1).GetComponent<Image>().sprite = customization.faces[i];
 
             if (Customization.faceItems[i].isBougth)
             {

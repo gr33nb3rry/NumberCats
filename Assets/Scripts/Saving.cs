@@ -131,6 +131,10 @@ public class Saving : MonoBehaviour
         else settings += 0;
         settings += ' ';
         settings += Settings.controls.ToString();
+        settings += ' ';
+        if (Settings.isDarkThemeOn)
+            settings += 1;
+        else settings += 0;
     }
     private void StatGenerate()
     {
@@ -232,6 +236,9 @@ public class Saving : MonoBehaviour
             Settings.isMusicOn = true;
         else Settings.isMusicOn = false;
         Settings.controls = Convert.ToInt32(dataTemp[3]);
+        if (Convert.ToInt32(dataTemp[4]) == 1)
+            Settings.isDarkThemeOn = true;
+        else Settings.isDarkThemeOn = false;
     }
     private void StatLoad(string data)
     {

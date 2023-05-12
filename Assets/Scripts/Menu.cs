@@ -53,6 +53,7 @@ public class Menu : MonoBehaviour
         UpdateHighScore();
         UpdateScore();
         UpdateCat();
+        settings.CheckForDarkTheme();
         settings.CheckForSounds();
         settings.CheckForMusic();
     }

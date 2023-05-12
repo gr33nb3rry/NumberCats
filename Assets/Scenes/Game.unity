@@ -3946,6 +3946,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStart: 0
+  lightThemeColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  darkThemeColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  darkThemeSlider: {fileID: 0}
+  themePanels:
+  - {fileID: 156039806}
+  themeTexts:
+  - {fileID: 2140989472}
+  - {fileID: 1244569081}
+  - {fileID: 561154819}
+  - {fileID: 1264319475}
+  - {fileID: 448672625}
+  - {fileID: 2078055027}
   SoundsSlider: {fileID: 1123211591}
   MusicSlider: {fileID: 1785738989}
   audioSoundsSources:
@@ -13143,6 +13159,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d4326175fd5209f44816d749ff53d837, type: 3}
   - {fileID: 21300000, guid: bbb7ef5f242672a4a82d76f808b5e076, type: 3}
   - {fileID: 21300000, guid: 3904e80b39149a043b831ba72ba27dca, type: 3}
+  - {fileID: 21300000, guid: ad20190c247f1e140bd78fce6e3ddfb0, type: 3}
+  - {fileID: 21300000, guid: 46d4383cea97dcb43bdcb2dd9007a626, type: 3}
+  - {fileID: 21300000, guid: 789557316207ff14da0a8ed85d2315fb, type: 3}
+  - {fileID: 21300000, guid: 9e442b3dd7c629145bbbac3ceb882dee, type: 3}
   hat: {fileID: 0}
   face: {fileID: 0}
   body: {fileID: 0}

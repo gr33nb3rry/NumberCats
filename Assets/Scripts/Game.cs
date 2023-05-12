@@ -79,6 +79,7 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
+        settings.CheckForDarkTheme();
         settings.CheckForSounds();
         settings.CheckForMusic();
         if (difficulty == 'E')
@@ -551,15 +552,18 @@ public class Game : MonoBehaviour
     public void Collect()
     {
         Menu.coins += coins;
+
+        if (isWon = false && Menu.highScore < Menu.score + score)
+        {
+            Menu.highScore = Menu.score + score;
+        }
+
         if (isWon)
         {
             Menu.score += score;
         }
         else Menu.score = 0;
-        if (Menu.highScore < Menu.score + score)
-        {
-            Menu.highScore = Menu.score + score;
-        }
+
         if (difficulty == 'E')
         {
             if (isWon) Settings.gamesWonEasy++;

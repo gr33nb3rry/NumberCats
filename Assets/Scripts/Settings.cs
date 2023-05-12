@@ -7,6 +7,7 @@ public class Settings : MonoBehaviour
 {
     public bool isStart;
     static public int language = 0;
+    static public bool isDarkThemeOn = false;
     static public bool isSoundsOn = true;
     static public bool isMusicOn = true;
     static public int controls = 0;
@@ -21,8 +22,14 @@ public class Settings : MonoBehaviour
 
     private Color32 greyColor = new Color32(128, 128, 128, 255);
     private Color32 greenColor = new Color32(0, 255, 68, 255);
+    public Color32 lightThemeColor = Color.white;
+    public Color32 darkThemeColor = Color.black;
     private bool languageActive = false;
 
+    [Header("Visuals")]
+    public GameObject darkThemeSlider;
+    public Image[] themePanels;
+    public Text[] themeTexts;
     [Header("Sounds")]
     public GameObject SoundsSlider;
     public GameObject MusicSlider;
@@ -47,11 +54,19 @@ public class Settings : MonoBehaviour
     }
     private void UpdateSettings()
     {
+        UpdateDarkTheme();
         UpdateSounds();
         UpdateMusic();
         UpdateControls();
         UpdateLanguage();
         idText.text = "ID: " + playerID;
+    }
+    private void UpdateDarkTheme()
+    {
+        if (isDarkThemeOn)
+            darkThemeSlider.GetComponent<Animation>().Play("settingsSliderON");
+        else
+            darkThemeSlider.GetComponent<Animation>().Play("settingsSliderOFF");
     }
     private void UpdateSounds()
     {
@@ -112,6 +127,31 @@ public class Settings : MonoBehaviour
         }
     }
 
+    public void CheckForDarkTheme()
+    {
+        if (isDarkThemeOn)
+        {
+            for (int i = 0; i < themePanels.Length; i++)
+            {
+                themePanels[i].color = darkThemeColor;
+            }
+            for (int i = 0; i < themeTexts.Length; i++)
+            {
+                themeTexts[i].color = lightThemeColor;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < themePanels.Length; i++)
+            {
+                themePanels[i].color = lightThemeColor;
+            }
+            for (int i = 0; i < themeTexts.Length; i++)
+            {
+                themeTexts[i].color = darkThemeColor;
+            }
+        }
+    }
     public void CheckForSounds()
     {
         if (isSoundsOn)
@@ -139,6 +179,13 @@ public class Settings : MonoBehaviour
         {
             audioMusicSource.volume = 0;
         }
+    }
+    public void DarkThemeOnOff()
+    {
+        isDarkThemeOn = !isDarkThemeOn;
+        isChanged = true;
+        UpdateDarkTheme();
+        CheckForDarkTheme();
     }
     public void SoundsOnOff()
     {
