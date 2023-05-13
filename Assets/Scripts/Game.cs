@@ -193,7 +193,7 @@ public class Game : MonoBehaviour
     }
     IEnumerator RandomNumberGeneration()
     {
-        randomNumber = Random.Range(0,1001);
+        randomNumber = Random.Range(1,1001);
         canvas.GetComponent<Animation>().Play("RandomNumberZoom");
         yield return new WaitForSeconds(1);
         for (int i = 0; i < 180; i++)
