@@ -37,6 +37,8 @@ public class Game : MonoBehaviour
     private int catSoundCount = 0;
     private bool isExtraLifeGot = false;
     int breakpoint = 100;
+    private int randomLeft = 1;
+    private int randomRight = 1000;
     [Header("Panels")]
     public Customization customization;
     public LevelPlayAds ads;
@@ -54,6 +56,7 @@ public class Game : MonoBehaviour
     public GameObject round;
     public GameObject endPanel;
     public GameObject extraLifePanel;
+    public GameObject loadPanel;
     [Header("Cat")]
     public GameObject cat;
     public GameObject hat;
@@ -193,7 +196,7 @@ public class Game : MonoBehaviour
     }
     IEnumerator RandomNumberGeneration()
     {
-        randomNumber = Random.Range(1,1001);
+        randomNumber = Random.Range(randomLeft, randomRight + 1);
         canvas.GetComponent<Animation>().Play("RandomNumberZoom");
         yield return new WaitForSeconds(1);
         for (int i = 0; i < 180; i++)
@@ -375,21 +378,22 @@ public class Game : MonoBehaviour
     }
     private void Chance()
     {
-        float chance = 0;
+        float chance = 0; 
+        float randomDivide = (float)randomRight / 100;
         if (numbers.GetLength(0) == 1)
         {
             if (numbers[0,0] == 0)
             {
-                chance += (float)(1000 - numbers[0, 1]) / 10;
+                chance += (float)(randomRight - numbers[0, 1]) / randomDivide;
             }
             else if (numbers[0,0] == roundCount - 1)
             {
-                chance += (float)(numbers[0, 1] - 1) / 10;
+                chance += (float)(numbers[0, 1] - 1) / randomDivide;
             }
             else
             {
-                chance += (float)(numbers[0, 1] - 1) / 10;
-                chance += (float)(1000 - numbers[0, 1]) / 10;
+                chance += (float)(numbers[0, 1] - 1) / randomDivide;
+                chance += (float)(randomRight - numbers[0, 1]) / randomDivide;
             }
         }
         bool isFirstTime = false;
@@ -397,16 +401,16 @@ public class Game : MonoBehaviour
         {
             if (i == numbers.GetLength(0) - 1 && numbers[i, 0] < roundCount - 1)
             {
-                chance += (float)(1000 - numbers[i, 1]) / 10;
+                chance += (float)(randomRight - numbers[i, 1]) / randomDivide;
             }
             if (numbers[0,0] > 0 && isFirstTime == false)
             {
-                chance += ((float)numbers[0, 1] - 1) / 10;
+                chance += ((float)numbers[0, 1] - 1) / randomDivide;
                 isFirstTime = true;
             }
             if (numbers[i, 0] - numbers[i - 1, 0] > 1)
             {
-                chance += (float)(numbers[i, 1] - numbers[i - 1, 1] - 1) / 10;
+                chance += (float)(numbers[i, 1] - numbers[i - 1, 1] - 1) / randomDivide;
             }
 
         }
@@ -553,7 +557,7 @@ public class Game : MonoBehaviour
     {
         Menu.coins += coins;
 
-        if (isWon = false && Menu.highScore < Menu.score + score)
+        if (isWon == false && Menu.highScore < Menu.score + score)
         {
             Menu.highScore = Menu.score + score;
         }
@@ -585,6 +589,7 @@ public class Game : MonoBehaviour
     }
     IEnumerator LoadMenu()
     {
+        loadPanel.SetActive(true);
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("Menu");
     }

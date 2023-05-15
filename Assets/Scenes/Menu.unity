@@ -882,6 +882,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!1 &53126734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2410,127 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!1 &206587781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206587782}
+  - component: {fileID: 206587784}
+  - component: {fileID: 206587783}
+  - component: {fileID: 206587785}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &206587782
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206587781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 929580732}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -185.82}
+  m_SizeDelta: {x: 400, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &206587783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206587781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fef98b3a31d67ab419c8b1c3cc0c8582, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: loading...
+--- !u!222 &206587784
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206587781}
+  m_CullTransparentMesh: 1
+--- !u!114 &206587785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206587781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:003e1fe4901a5e54ab79425bcda06fd8
+    m_TableEntryReference:
+      m_KeyId: 4233793496072192
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 206587783}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &219512547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2712,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!114 &222590707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4397,7 +4520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.15664072, b: 0.5471698, a: 0.22745098}
+  m_Color: {r: 0.28502136, g: 0.36800727, b: 0.5754717, a: 0.39607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6152,6 +6275,8 @@ MonoBehaviour:
   - {fileID: 1253365805}
   - {fileID: 1960535925}
   - {fileID: 636099364}
+  - {fileID: 1106739580}
+  - {fileID: 929580733}
   themeTexts:
   - {fileID: 1264319475}
   - {fileID: 2028178166}
@@ -6201,6 +6326,7 @@ MonoBehaviour:
   - {fileID: 1731766233}
   - {fileID: 1434201673}
   - {fileID: 8342752}
+  - {fileID: 206587783}
   SoundsSlider: {fileID: 1773191919}
   MusicSlider: {fileID: 136328470}
   audioSoundsSources:
@@ -6559,6 +6685,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!111 &608767202
 Animation:
   m_ObjectHideFlags: 0
@@ -7158,6 +7285,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!111 &621571168
 Animation:
   m_ObjectHideFlags: 0
@@ -7375,6 +7503,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!114 &636099368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9505,6 +9634,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!1 &783307619
 GameObject:
   m_ObjectHideFlags: 0
@@ -11342,6 +11472,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929120053}
   m_CullTransparentMesh: 1
+--- !u!1 &929580731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929580732}
+  - component: {fileID: 929580734}
+  - component: {fileID: 929580733}
+  m_Layer: 5
+  m_Name: Loading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &929580732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929580731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1457790801}
+  - {fileID: 206587782}
+  m_Father: {fileID: 1909647928}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &929580733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929580731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &929580734
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929580731}
+  m_CullTransparentMesh: 1
 --- !u!1001 &952729505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12338,6 +12546,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!111 &1028955730
 Animation:
   m_ObjectHideFlags: 0
@@ -14482,6 +14691,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 929580731}
 --- !u!111 &1167654521
 Animation:
   m_ObjectHideFlags: 0
@@ -14914,6 +15124,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!114 &1181992779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15877,6 +16088,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!114 &1253365809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16560,6 +16772,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!114 &1291376848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18706,6 +18919,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!114 &1431648351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19166,6 +19380,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!111 &1436178228
 Animation:
   m_ObjectHideFlags: 0
@@ -19457,6 +19672,82 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!1 &1457790800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457790801}
+  - component: {fileID: 1457790803}
+  - component: {fileID: 1457790802}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1457790801
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457790800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 929580732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1457790802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457790800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4805bb0093101cc45b3ea41d9c61d02d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1457790803
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457790800}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1458509765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20334,6 +20625,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 929580731}
 --- !u!111 &1533832710
 Animation:
   m_ObjectHideFlags: 0
@@ -23391,6 +23683,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!1 &1730239372
 GameObject:
   m_ObjectHideFlags: 0
@@ -24328,6 +24621,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 929580731}
 --- !u!111 &1781914641
 Animation:
   m_ObjectHideFlags: 0
@@ -24992,6 +25286,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!114 &1816618887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25416,7 +25711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -189.99997, y: 300.00006}
+  m_AnchoredPosition: {x: -189.99997, y: 300}
   m_SizeDelta: {x: 150, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838617590
@@ -25566,6 +25861,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
   audioSource: {fileID: 2041099285}
+  loadPanel: {fileID: 0}
 --- !u!1 &1840082990
 GameObject:
   m_ObjectHideFlags: 0
@@ -27094,6 +27390,7 @@ RectTransform:
   - {fileID: 786327907}
   - {fileID: 2041099282}
   - {fileID: 420799706}
+  - {fileID: 929580732}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27873,6 +28170,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!114 &1960535929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29043,6 +29341,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!111 &2030389871
 Animation:
   m_ObjectHideFlags: 0
@@ -29592,6 +29891,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!111 &2051738367
 Animation:
   m_ObjectHideFlags: 0
@@ -31553,6 +31853,7 @@ MonoBehaviour:
   shop: {fileID: 1281596859}
   tapSound: {fileID: 0}
   audioSource: {fileID: 0}
+  loadPanel: {fileID: 0}
 --- !u!111 &2139027001
 Animation:
   m_ObjectHideFlags: 0

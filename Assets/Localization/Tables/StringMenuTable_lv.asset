@@ -65,6 +65,10 @@ MonoBehaviour:
     m_Localized: nopirka
     m_Metadata:
       m_Items: []
+  - m_Id: 4233793496072192
+    m_Localized: "iel\u0101d\u0113\u0161ana..."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

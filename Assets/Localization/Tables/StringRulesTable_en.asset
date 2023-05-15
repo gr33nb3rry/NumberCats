@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1454771453952
-    m_Localized: '1. Each round generates a random number from 0 to 1000.
+    m_Localized: '1. Each round generates a random number from 1 to 1000.
 
 
       2.

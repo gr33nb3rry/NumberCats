@@ -17,6 +17,7 @@ public class Button : MonoBehaviour
     public Shop shop;
     public AudioClip tapSound;
     public AudioSource audioSource;
+    public GameObject loadPanel;
     public void Click()
     {
         if (isPlayButton)
@@ -64,6 +65,7 @@ public class Button : MonoBehaviour
         {
             GetComponent<Animation>().Play("clickButtonDifficulty");
             Game.difficulty = difficulty;
+            loadPanel.SetActive(true);
             SceneManager.LoadScene("Game");
         }
         else if (isCloseDifficultyButton)

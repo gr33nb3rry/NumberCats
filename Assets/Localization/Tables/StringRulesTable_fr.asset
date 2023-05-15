@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1454771453952
-    m_Localized: "1. Un nombre al\xE9atoire entre 0 et 1000 est g\xE9n\xE9r\xE9 \xE0
+    m_Localized: "1. Un nombre al\xE9atoire entre 1 et 1000 est g\xE9n\xE9r\xE9 \xE0
       chaque tour.\n\n2 Le joueur choisit la case dans laquelle il veut placer le
       nombre.\n\n3) Si tous les nombres dans les cases vont dans l'ordre du plus
       petit au plus grand, le joueur obtient des points et des pi\xE8ces. Les points

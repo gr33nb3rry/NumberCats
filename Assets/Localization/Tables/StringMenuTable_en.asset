@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Localized: bought
     m_Metadata:
       m_Items: []
+  - m_Id: 4233793496072192
+    m_Localized: loading...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
