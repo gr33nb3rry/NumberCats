@@ -44,6 +44,15 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
         new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
+        new ShopItem(cost: 50),
     };
     static public ShopItem[] bodyItems = new ShopItem[]
     {
@@ -51,6 +60,9 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 100),
         new ShopItem(cost: 250),
         new ShopItem(cost: 600),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
+        new ShopItem(cost: 1000),
         new ShopItem(cost: 1000),
         new ShopItem(cost: 1000),
         new ShopItem(cost: 1000),

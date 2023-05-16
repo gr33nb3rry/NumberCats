@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,7 +8,7 @@ using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Game : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
     static public char difficulty;
     private int score;
@@ -48,15 +47,12 @@ public class Game : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject playPanel;
     public GameObject slotsEasy;
-    public GameObject slotsMedium;
-    public GameObject slotsHard;
-    public GameObject slotsMediumSecond;
-    public GameObject slotsHardSecond;
     public GameObject canvas;
     public GameObject round;
     public GameObject endPanel;
     public GameObject extraLifePanel;
     public GameObject loadPanel;
+    public GameObject tutorialPanel;
     [Header("Cat")]
     public GameObject cat;
     public GameObject hat;
@@ -82,37 +78,23 @@ public class Game : MonoBehaviour
     public AudioClip[] randomnumberClip;
     public AudioClip[] music;
 
+    private int[] randomNumbers = new int[5] {505, 2, 140, 512, 906};
+    private int[] putSlots = new int[5] {2, 0, 1, 3, 4};
+    private int tutorialStep = 0;
+    public LocalizeStringEvent tutorialText;
+
     public void Start()
     {
-        settings.CheckForDarkTheme();
-        settings.CheckForSounds();
-        settings.CheckForMusic();
-        if (difficulty == 'E')
-        {
-            slots = slotsEasy;
-            roundCount = Random.Range(4, 7);
-            settings.audioMusicSource.clip = music[0];
-        }
-        else if (difficulty == 'M')
-        {
-            Debug.Log("controls " + Settings.controls);
-            if (Settings.controls == 0)
-                slots = slotsMedium;
-            else if (Settings.controls == 1)
-                slots = slotsMediumSecond;
-            roundCount = Random.Range(8, 11);
-            settings.audioMusicSource.clip = music[1];
-        }
-        else if (difficulty == 'H')
-        {
-            Debug.Log("controls " + Settings.controls);
-            if (Settings.controls == 0)
-                slots = slotsHard;
-            else if (Settings.controls == 1)
-                slots = slotsHardSecond;
-            roundCount = Random.Range(11, 16);
-            settings.audioMusicSource.clip = music[2];
-        }
+        //settings.CheckForDarkTheme();
+        //settings.CheckForSounds();
+        //settings.CheckForMusic();
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+
+        slots = slotsEasy;
+        roundCount = 5;
+        settings.audioMusicSource.clip = music[0];
+
         settings.audioMusicSource.Play();
         slots.SetActive(true);
         roundNumber = 1;
@@ -130,25 +112,11 @@ public class Game : MonoBehaviour
     }
     private void UpdateCat()
     {
-        UpdateHat();
-        body.GetComponent<Image>().sprite = customization.bodies[Customization.bodyChosen];
-        tail.GetComponent<Image>().sprite = customization.tails[Customization.bodyChosen];
-        face.GetComponent<Image>().sprite = customization.faces[Customization.faceChosen];
-    }
-    private void UpdateHat()
-    {
-        hat.GetComponent<Image>().sprite = customization.hats[Customization.hatChosen];
-        hat.GetComponent<RectTransform>().localScale *= 0.5f;
-        if (customization.hats[Customization.hatChosen].name[0] == 'B')
-        {
-            hat.GetComponent<RectTransform>().localScale = Customization.bigHatScale;
-            hat.GetComponent<RectTransform>().anchoredPosition = Customization.bigHatPos;
-        }
-        else
-        {
-            hat.GetComponent<RectTransform>().localScale = Customization.smallHatScale;
-            hat.GetComponent<RectTransform>().anchoredPosition = Customization.smallHatPos;
-        }
+        body.GetComponent<Image>().sprite = customization.bodies[0];
+        tail.GetComponent<Image>().sprite = customization.tails[0];
+        face.GetComponent<Image>().sprite = customization.faces[0];
+        hat.GetComponent<Image>().sprite = customization.hats[0];
+        hat.GetComponent<RectTransform>().localScale = Customization.smallHatScale;
     }
     private void UpdateRoundText()
     {
@@ -195,12 +163,35 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(RandomNumberGeneration());
         yield return new WaitForSeconds(5.5f);
+
+        TutorialOpen("step_0");
+
         AvailableSlotShaking();
         settingsButton.enabled = true;
     }
+    private void TutorialOpen(string entry)
+    {
+        tutorialText.StringReference.TableEntryReference = entry;
+        tutorialPanel.SetActive(true);
+    }
+    public void TutorialClose()
+    {
+        if (tutorialStep == 0)
+        {
+            tutorialPanel.GetComponent<Image>().raycastTarget = false;
+            tutorialPanel.transform.GetChild(2).gameObject.SetActive(false);
+            tutorialStep++;
+            tutorialPanel.SetActive(false);
+            TutorialOpen("step_1");
+        }
+        else
+        {
+            tutorialPanel.SetActive(false);
+        }
+    }
     IEnumerator RandomNumberGeneration()
     {
-        randomNumber = Random.Range(randomLeft, randomRight + 1);
+        randomNumber = randomNumbers[roundNumber - 1];
         canvas.GetComponent<Animation>().Play("RandomNumberZoom");
         yield return new WaitForSeconds(1);
         for (int i = 0; i < 180; i++)
@@ -236,17 +227,25 @@ public class Game : MonoBehaviour
     }
     public void PutRandomNumber(int id)
     {
-        randomNumberAudio.clip = slotOpeningClip;
-        randomNumberAudio.Play();
+        if (id == putSlots[roundNumber - 1])
+        {
+            TutorialClose();
+            randomNumberAudio.clip = slotOpeningClip;
+            randomNumberAudio.Play();
 
-        settingsButton.enabled = false;
-        StopSlotShaking();
-        slots.transform.GetChild(id).GetChild(2).GetChild(0).GetComponent<Text>().text =
-            randomNumber.ToString();
-        slots.transform.GetChild(id).GetComponent<Animation>().Play("slotClick");
-        isAbleToPut = false;
-        idLastPut = id;
-        Invoke("CheckForOrder", 2);
+            settingsButton.enabled = false;
+            StopSlotShaking();
+            slots.transform.GetChild(id).GetChild(2).GetChild(0).GetComponent<Text>().text =
+                randomNumber.ToString();
+            slots.transform.GetChild(id).GetComponent<Animation>().Play("slotClick");
+            isAbleToPut = false;
+            idLastPut = id;
+            Invoke("CheckForOrder", 2);
+        }
+        else
+        {
+            Debug.Log("NO");
+        }
     }
     private void CheckForOrder()
     {
@@ -266,46 +265,8 @@ public class Game : MonoBehaviour
             numbers[i, 0] = slotsWithNumber[i];
             numbers[i, 1] = System.Convert.ToInt32(slots.transform.GetChild(slotsWithNumber[i]).GetChild(2).GetChild(0).GetComponent<Text>().text);
         }
-        //check for order
         breakpoint = 100;
-        for (int i = 0; i < numbers.GetLength(0); i++)
-        {
-            if (numbers[i, 0] == idLastPut && numbers.GetLength(0) > 1)
-            {
-                if (i == numbers.GetLength(0) - 1)
-                {
-                    if (numbers[i, 1] < numbers[i - 1, 1])
-                    {
-                        breakpoint = numbers[i, 0];
-                    }
-                }
-                else if (i == 0)
-                {
-                    if (numbers[i, 1] > numbers[i + 1, 1])
-                    {
-                        breakpoint = numbers[i, 0];
-                    }
-                }
-                else
-                {
-                    if (numbers[i, 1] > numbers[i + 1, 1] || numbers[i, 1] < numbers[i - 1, 1])
-                    {
-                        breakpoint = numbers[i, 0];
-                    }
-                }
-            }
-        }
         
-        /*
-        for (int i = 1; i < slotsWithNumber.Count; i++)
-        {
-            if (numbers[i, 1] < numbers[i - 1, 1])
-            {
-                breakpoint = numbers[i, 0];
-                break;
-            }
-        }
-        */
         StartCoroutine(CheckForOrderAnimation(slotsWithNumber, breakpoint));
     }
     IEnumerator CheckForOrderAnimation(List<int> slotsWithNumber, int breakpoint)
@@ -325,21 +286,13 @@ public class Game : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
 
-        if (breakpoint == 100)
+        for (int i = 0; i < roundCount; i++)
         {
-            for (int i = 0; i < roundCount; i++)
-            {
-                slots.transform.GetChild(i).GetChild(2).GetChild(1).gameObject.SetActive(false);
-                slots.transform.GetChild(i).GetChild(2).GetChild(2).gameObject.SetActive(false);
-                yield return new WaitForSeconds(0.1f);
-            }
-            NextRound();
+            slots.transform.GetChild(i).GetChild(2).GetChild(1).gameObject.SetActive(false);
+            slots.transform.GetChild(i).GetChild(2).GetChild(2).gameObject.SetActive(false);
+            yield return new WaitForSeconds(0.1f);
         }
-        else
-        {
-            yield return new WaitForSeconds(0.5f);
-            Lose();
-        }
+        NextRound();
     }
     private void CatSound()
     {
