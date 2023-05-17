@@ -248,7 +248,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 491843651}
   m_OnClick:
     m_PersistentCalls:
@@ -5472,7 +5472,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 491843651}
   m_OnClick:
     m_PersistentCalls:
@@ -6837,6 +6837,23 @@ MonoBehaviour:
   - {fileID: 1398569084}
   - {fileID: 271790296}
   - {fileID: 698545283}
+  - {fileID: 621585202}
+  - {fileID: 1240095221}
+  - {fileID: 1528839884}
+  - {fileID: 389042811}
+  - {fileID: 2066261062}
+  - {fileID: 1219340507}
+  - {fileID: 256253102}
+  - {fileID: 1805638206}
+  - {fileID: 1627251502}
+  - {fileID: 1031769639}
+  - {fileID: 1516176997}
+  - {fileID: 1238318949}
+  - {fileID: 945274246}
+  - {fileID: 1822417805}
+  - {fileID: 1712762299}
+  - {fileID: 1201829832}
+  themePanelsInverse: []
   SoundsSlider: {fileID: 1732236218}
   MusicSlider: {fileID: 268392490}
   audioSoundsSources:
@@ -6851,7 +6868,7 @@ MonoBehaviour:
   frenchSelect: {fileID: 1061417702}
   latvianSelect: {fileID: 411920733}
   russianSelect: {fileID: 1245953735}
-  RulesPanel: {fileID: 509572921}
+  RulesPanel: {fileID: 725548590}
   idText: {fileID: 1813794767}
 --- !u!111 &548348634
 Animation:
@@ -13502,7 +13519,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   shop: {fileID: 0}
   tapSound: {fileID: 8300000, guid: 30749c477f33af94fb83bf46ed006ed8, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 999229171}
   loadPanel: {fileID: 0}
 --- !u!114 &1070519576
 MonoBehaviour:
@@ -13560,7 +13577,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 548348633}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: RulesClose
         m_Mode: 1
@@ -18658,6 +18675,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 99969c725381c454990dd8c0d496e9f0, type: 3}
   - {fileID: 21300000, guid: 17c9a66536a462b41b4e8721dbe4bbc5, type: 3}
   - {fileID: 21300000, guid: 9a759333865352d489036c999d7a6bdc, type: 3}
+  - {fileID: 21300000, guid: 1197f7e31f6759549ab999df77236df4, type: 3}
+  - {fileID: 21300000, guid: 9cabe7f4f4491a34096fe7573e159952, type: 3}
+  - {fileID: 21300000, guid: 5a6d7d09125456c4d87c4038cf4c4f9b, type: 3}
   tails:
   - {fileID: 21300000, guid: c19ea304cc09214418c632fb045d6959, type: 3}
   - {fileID: 21300000, guid: ca009e528de612b42a15c3549ce7c82f, type: 3}
@@ -18672,6 +18692,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2bfdbde4d42b1d54c8db93c041c9cd45, type: 3}
   - {fileID: 21300000, guid: e24d1f8788a42054b8a34e9064f8521a, type: 3}
   - {fileID: 21300000, guid: bbebecb0adc4e1648bad385e5d6f8e13, type: 3}
+  - {fileID: 21300000, guid: 40f70f69be4f5ee438f996a4180addde, type: 3}
+  - {fileID: 21300000, guid: bb70c7fad6f4fb94a87ea6b3a6d0f458, type: 3}
+  - {fileID: 21300000, guid: 4fadb23c6ff945c4fbe322c720a6a09f, type: 3}
   faces:
   - {fileID: 21300000, guid: 55515acdd10d2c34cb2d0df08e8b83bd, type: 3}
   - {fileID: 21300000, guid: 87ec22397c0bbd34ba6dcb291ae81ab9, type: 3}
