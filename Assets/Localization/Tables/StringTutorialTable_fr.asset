@@ -19,11 +19,36 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 7455555584
-    m_Localized: a
+    m_Localized: "le but du jeu est de mettre dans l'ordre des nombres al\xE9atoires"
     m_Metadata:
       m_Items: []
   - m_Id: 67459268608
-    m_Localized: a
+    m_Localized: "le premier num\xE9ro est 505, la place logique serait au milieu,
+      au num\xE9ro 3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137374225055744
+    m_Localized: "les chiffres peuvent aller de 1 \xE0 1000, je vais vous aider dans
+      ce jeu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135936707051520
+    m_Localized: "le dernier num\xE9ro restant, c'est une bonne chose que nous ayons
+      eu de la chance avec lui"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135917245480960
+    m_Localized: "c'est simple, il serait plus logique de le mettre en quatri\xE8me
+      position"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135908131258368
+    m_Localized: "140 plus de 2 mais moins de 505, le mettre en 2\xE8me position,
+      meow"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135866838335488
+    m_Localized: "2 parfaits pour la premi\xE8re place, meow"
     m_Metadata:
       m_Items: []
   references:

@@ -19,11 +19,36 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 7455555584
-    m_Localized: a
+    m_Localized: "sp\u0113les m\u0113r\u0137is ir sak\u0101rtot nejau\u0161us skait\u013Cus"
     m_Metadata:
       m_Items: []
   - m_Id: 67459268608
-    m_Localized: a
+    m_Localized: "pirmais numurs ir 505, b\u016Btu lo\u0123iski to ievietot pa vidu,
+      tre\u0161aj\u0101 viet\u0101"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135866838335488
+    m_Localized: "2 ide\u0101ls par pirmo vietu , miau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135908131258368
+    m_Localized: "140 ir vair\u0101k nek\u0101 2, bet maz\u0101k nek\u0101 505, ielieciet
+      to 2. viet\u0101, miau,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135917245480960
+    m_Localized: "tas ir vienk\u0101r\u0161i, lo\u0123isk\u0101k b\u016Btu to ievietot
+      ceturtaj\u0101 viet\u0101"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135936707051520
+    m_Localized: "p\u0113d\u0113jais atst\u0101tais numurs, tas ir labi, ka mums
+      ar vi\u0146u paveic\u0101s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137374225055744
+    m_Localized: "skait\u013Ci var iet no 1 l\u012Bdz 1000, Es tev pal\u012Bdz\u0113\u0161u
+      ar \u0161o sp\u0113li"
     m_Metadata:
       m_Items: []
   references:

@@ -178,11 +178,17 @@ public class Tutorial : MonoBehaviour
     {
         if (tutorialStep == 0)
         {
+            tutorialStep++;
+            tutorialPanel.SetActive(false);
+            TutorialOpen("step_1");
+        }
+        else if (tutorialStep == 1)
+        {
             tutorialPanel.GetComponent<Image>().raycastTarget = false;
             tutorialPanel.transform.GetChild(2).gameObject.SetActive(false);
             tutorialStep++;
             tutorialPanel.SetActive(false);
-            TutorialOpen("step_1");
+            TutorialOpen("step_2");
         }
         else
         {
@@ -334,6 +340,7 @@ public class Tutorial : MonoBehaviour
         round.GetComponent<Animation>().Play("roundIdle");
         StartCoroutine(RandomNumberGeneration());
         yield return new WaitForSeconds(5.5f);
+        TutorialOpen($"step_{roundNumber + 1}");
         AvailableSlotShaking();
         settingsButton.enabled = true;
     }

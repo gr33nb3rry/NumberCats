@@ -19,11 +19,32 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 7455555584
-    m_Localized: a
+    m_Localized: goal of the game is to put random numbers in order
     m_Metadata:
       m_Items: []
   - m_Id: 67459268608
-    m_Localized: a
+    m_Localized: the first number is 505, it'd be great to put in the middle, in
+      the 3rd place
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135866838335488
+    m_Localized: 2 is perfect for the first place, meow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135908131258368
+    m_Localized: 140 is more than 2, but less than 505, put it in 2nd place, meow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135917245480960
+    m_Localized: It's simple, it makes more sense to put it in 4th place
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135936707051520
+    m_Localized: the last number left, it's a good thing we got lucky with him
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137374225055744
+    m_Localized: The numbers can go from 1 to 1000, I'll help you with this game
     m_Metadata:
       m_Items: []
   references:
