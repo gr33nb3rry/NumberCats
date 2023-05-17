@@ -10,7 +10,7 @@ public class ChooseLanguage : MonoBehaviour
     }
     IEnumerator LoadTutorialTemp()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         SceneManager.LoadScene("Tutorial");
     }
 }

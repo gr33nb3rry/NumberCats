@@ -46,6 +46,7 @@ public class Settings : MonoBehaviour
     public GameObject russianSelect;
     [Header("Other")]
     public GameObject RulesPanel;
+    public GameObject AttributesPanel;
     public Text idText;
 
     public void OnEnable()
@@ -249,6 +250,14 @@ public class Settings : MonoBehaviour
     public void RulesClose()
     {
         RulesPanel.SetActive(false);
+    }
+    public void AttributesOpen()
+    {
+        AttributesPanel.SetActive(true);
+    }
+    public void AttributesClose()
+    {
+        AttributesPanel.SetActive(false);
     }
     public void CloseSettings()
     {
