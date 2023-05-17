@@ -78,9 +78,8 @@ public class Saving : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("ChooseLanguage");
         }
-        
     }
     public async void Save()
     {
