@@ -72,7 +72,15 @@ public class Saving : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         settingsPanel.LanguageChangeOnStart();
         yield return new WaitForSeconds(0.1f);
-        SceneManager.LoadScene("Menu");
+        if (Settings.gamesPlayedEasy > 0)
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        else
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
+        
     }
     public async void Save()
     {

@@ -30,6 +30,7 @@ public class Settings : MonoBehaviour
     public GameObject darkThemeSlider;
     public Image[] themePanels;
     public Text[] themeTexts;
+    public Image[] themePanelsInverse;
     [Header("Sounds")]
     public GameObject SoundsSlider;
     public GameObject MusicSlider;
@@ -139,6 +140,10 @@ public class Settings : MonoBehaviour
             {
                 themeTexts[i].color = lightThemeColor;
             }
+            for (int i = 0; i < themePanelsInverse.Length; i++)
+            {
+                themePanelsInverse[i].color = lightThemeColor;
+            }
         }
         else
         {
@@ -149,6 +154,10 @@ public class Settings : MonoBehaviour
             for (int i = 0; i < themeTexts.Length; i++)
             {
                 themeTexts[i].color = darkThemeColor;
+            }
+            for (int i = 0; i < themePanelsInverse.Length; i++)
+            {
+                themePanelsInverse[i].color = darkThemeColor;
             }
         }
     }

@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Localized: The numbers can go from 1 to 1000, I'll help you with this game
     m_Metadata:
       m_Items: []
+  - m_Id: 151041989591040
+    m_Localized: tap to continue
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

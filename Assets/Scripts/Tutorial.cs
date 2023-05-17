@@ -85,9 +85,9 @@ public class Tutorial : MonoBehaviour
 
     public void Start()
     {
-        //settings.CheckForDarkTheme();
-        //settings.CheckForSounds();
-        //settings.CheckForMusic();
+        settings.CheckForDarkTheme();
+        settings.CheckForSounds();
+        settings.CheckForMusic();
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
@@ -525,32 +525,11 @@ public class Tutorial : MonoBehaviour
     {
         Menu.coins += coins;
 
-        if (isWon == false && Menu.highScore < Menu.score + score)
-        {
-            Menu.highScore = Menu.score + score;
-        }
+        Menu.score += score;
 
-        if (isWon)
-        {
-            Menu.score += score;
-        }
-        else Menu.score = 0;
+        Settings.gamesWonEasy++;
+        Settings.gamesPlayedEasy++;
 
-        if (difficulty == 'E')
-        {
-            if (isWon) Settings.gamesWonEasy++;
-            Settings.gamesPlayedEasy++;
-        }
-        else if (difficulty == 'M')
-        {
-            if (isWon) Settings.gamesWonMedium++;
-            Settings.gamesPlayedMedium++;
-        }
-        else if (difficulty == 'H')
-        {
-            if (isWon) Settings.gamesWonHard++;
-            Settings.gamesPlayedHard++;
-        }
         saving.Save();
         Settings.isChanged = false;
         StartCoroutine(LoadMenu());

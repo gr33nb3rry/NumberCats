@@ -1140,9 +1140,9 @@ RectTransform:
   - {fileID: 1092222446}
   - {fileID: 112131771}
   - {fileID: 230539113}
+  - {fileID: 446175823}
   - {fileID: 548348632}
   - {fileID: 725548591}
-  - {fileID: 446175823}
   m_Father: {fileID: 1909647928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3280,6 +3280,7 @@ GameObject:
   - component: {fileID: 446175825}
   - component: {fileID: 446175824}
   - component: {fileID: 446175826}
+  - component: {fileID: 446175827}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -3303,7 +3304,7 @@ RectTransform:
   - {fileID: 1944700973}
   - {fileID: 1653235455}
   m_Father: {fileID: 156039805}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3404,6 +3405,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &446175827
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446175822}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b6263bed0fa31224d88d6daa6aa6b800, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b6263bed0fa31224d88d6daa6aa6b800, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &448672624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,7 +4671,7 @@ RectTransform:
   - {fileID: 1771845668}
   - {fileID: 888352115}
   m_Father: {fileID: 156039805}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4699,57 +4716,6 @@ MonoBehaviour:
   - {fileID: 173151921}
   - {fileID: 2037880893}
   - {fileID: 1742463538}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1716867191}
   - {fileID: 224080227}
   - {fileID: 192659180}
@@ -4765,6 +4731,9 @@ MonoBehaviour:
   - {fileID: 1398569084}
   - {fileID: 271790296}
   - {fileID: 698545283}
+  - {fileID: 1413913058}
+  themePanelsInverse:
+  - {fileID: 1944700974}
   SoundsSlider: {fileID: 1732236218}
   MusicSlider: {fileID: 268392490}
   audioSoundsSources:
@@ -5829,8 +5798,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        - m_Target: {fileID: 1909647932}
+          m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
           m_MethodName: OpenSettings
           m_Mode: 1
           m_Arguments:
@@ -6728,7 +6697,7 @@ RectTransform:
   - {fileID: 1643142987}
   - {fileID: 1070519573}
   m_Father: {fileID: 156039805}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11243,11 +11212,11 @@ RectTransform:
   m_Father: {fileID: 446175823}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40, y: 170.58997}
-  m_SizeDelta: {x: 342.66, y: 122.7}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -134.66995, y: -509.40997}
+  m_SizeDelta: {x: 342.66003, y: 122.70001}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413913058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12982,6 +12951,7 @@ GameObject:
   - component: {fileID: 1653235455}
   - component: {fileID: 1653235457}
   - component: {fileID: 1653235456}
+  - component: {fileID: 1653235458}
   m_Layer: 5
   m_Name: TutorialText (1)
   m_TagString: Untagged
@@ -13051,6 +13021,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653235454}
   m_CullTransparentMesh: 1
+--- !u!114 &1653235458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653235454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:41c83be051f7a6e4998e9d5e76fbf881
+    m_TableEntryReference:
+      m_KeyId: 151041989591040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1653235456}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1677812218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14549,8 +14559,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+      - m_Target: {fileID: 1909647932}
+        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
         m_MethodName: Collect
         m_Mode: 1
         m_Arguments:

@@ -51,6 +51,10 @@ MonoBehaviour:
       ar \u0161o sp\u0113li"
     m_Metadata:
       m_Items: []
+  - m_Id: 151041989591040
+    m_Localized: "nospiediet, lai turpin\u0101tu"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
