@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Localized: "iel\u0101d\u0113\u0161ana..."
     m_Metadata:
       m_Items: []
+  - m_Id: 5717532059287552
+    m_Localized: "izaicin\u0101jumi"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

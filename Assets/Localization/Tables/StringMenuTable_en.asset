@@ -73,6 +73,10 @@ MonoBehaviour:
     m_Localized: loading...
     m_Metadata:
       m_Items: []
+  - m_Id: 5717532059287552
+    m_Localized: challenges
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

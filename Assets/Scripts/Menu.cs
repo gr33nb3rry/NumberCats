@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour
     public GameObject shopPanel;
     public GameObject settingsPanel;
     public GameObject difficultyPanel;
+    public GameObject challengesPanel;
     [Header("Footer")]
     public GameObject[] footerPanels;
     public GameObject customizeButton;
@@ -69,6 +70,11 @@ public class Menu : MonoBehaviour
         difficultyPanel.SetActive(true);
         difficultyPanel.GetComponent<Animation>().Play("difficultyOpen");
     }
+    public void ChallengesOpen()
+    {
+        challengesPanel.SetActive(true);
+        challengesPanel.GetComponent<Animation>().Play("challengesOpen");
+    }
     public void CloseDifficulty()
     {
         StartCoroutine(CloseDifficultyTemp());
@@ -78,6 +84,17 @@ public class Menu : MonoBehaviour
         difficultyPanel.GetComponent<Animation>().Play("difficultyClose");
         yield return new WaitForSeconds(0.5f);
         difficultyPanel.SetActive(false);
+        OpenActivePanel();
+    }
+    public void ChallengesClose()
+    {
+        StartCoroutine(ChallengesCloseTemp());
+    }
+    IEnumerator ChallengesCloseTemp()
+    {
+        challengesPanel.GetComponent<Animation>().Play("challengesClose");
+        yield return new WaitForSeconds(0.5f);
+        challengesPanel.SetActive(false);
         OpenActivePanel();
     }
     private void UpdateHighScore()

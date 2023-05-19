@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Localized: chargement...
     m_Metadata:
       m_Items: []
+  - m_Id: 5717532059287552
+    m_Localized: "d\xE9fis"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

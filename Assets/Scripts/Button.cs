@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     public bool isPlayButton;
+    public bool isChallengesButton;
     public bool isRankButton;
     public bool isFooterButton;
     public bool isShopCategoryButton;
     public bool isShopBuyButton;
     public bool isDifficultyButton;
     public bool isCloseDifficultyButton;
+    public bool isCloseChallengesButton;
     public bool isSettingsButton;
     public char difficulty;
     public Menu menu;
@@ -28,6 +30,14 @@ public class Button : MonoBehaviour
             GetComponent<Animation>().Play("clickButtonPlay");
             menu.Invoke("CloseActivePanel", 0.91f);
             menu.Invoke("ChooseDifficulty", 1.41f);
+        }
+        else if (isChallengesButton)
+        {
+            audioSource.clip = tapSound;
+            audioSource.Play();
+            GetComponent<Animation>().Play("clickButtonScale");
+            menu.Invoke("CloseActivePanel", 0.25f);
+            menu.Invoke("ChallengesOpen", 0.66f);
         }
         else if (isRankButton)
         {
@@ -71,6 +81,10 @@ public class Button : MonoBehaviour
         else if (isCloseDifficultyButton)
         {
             menu.CloseDifficulty();
+        }
+        else if (isCloseChallengesButton)
+        {
+            menu.ChallengesClose();
         }
         else if (isSettingsButton)
         {
