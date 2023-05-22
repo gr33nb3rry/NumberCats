@@ -57,6 +57,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+  - m_GUID: cf2a17684320fc9449f68e12f4e20eac
+    m_Address: StringChallengesTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 63331f607b7ca0d4ba7f91257e925f05, type: 2}
   m_SchemaSet:
