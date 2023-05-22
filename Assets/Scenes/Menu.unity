@@ -13686,9 +13686,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d87cb4ae72f258449a2db1717f545cc, type: 3}
+  m_Script: {fileID: 11500000, guid: d623b4d922400134587e8ee8d5a43c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testMode: 0
 --- !u!1 &520648454
 GameObject:
   m_ObjectHideFlags: 0
@@ -52328,7 +52329,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420035}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelPlayAds, Assembly-CSharp
         m_MethodName: ShowShortAd
         m_Mode: 1

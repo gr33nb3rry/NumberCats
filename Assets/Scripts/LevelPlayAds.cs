@@ -7,6 +7,7 @@ public class LevelPlayAds : MonoBehaviour
     {
         IronSource.Agent.init("19ebff1cd", IronSourceAdUnits.REWARDED_VIDEO, IronSourceAdUnits.INTERSTITIAL);
         IronSource.Agent.validateIntegration();
+        Debug.Log("Init");
 
         LoadShortAd();
 

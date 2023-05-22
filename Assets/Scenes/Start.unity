@@ -399,6 +399,7 @@ MonoBehaviour:
   darkThemeSlider: {fileID: 0}
   themePanels: []
   themeTexts: []
+  themePanelsInverse: []
   SoundsSlider: {fileID: 0}
   MusicSlider: {fileID: 0}
   audioSoundsSources: []
@@ -410,6 +411,7 @@ MonoBehaviour:
   latvianSelect: {fileID: 0}
   russianSelect: {fileID: 0}
   RulesPanel: {fileID: 0}
+  AttributesPanel: {fileID: 0}
   idText: {fileID: 0}
 --- !u!1 &572444899
 GameObject:

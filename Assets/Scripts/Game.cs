@@ -41,7 +41,7 @@ public class Game : MonoBehaviour
     private int randomRight = 1000;
     [Header("Panels")]
     public Customization customization;
-    public LevelPlayAds ads;
+    public RewardAd ads;
     public Saving saving;
     public Settings settings;
     public EventTrigger settingsButton;
@@ -487,7 +487,7 @@ public class Game : MonoBehaviour
     }
     public void ExtraLifeGet()
     {
-        ads.ShowRewardedAd();
+        ads.ShowAd();
         extraLifePanel.SetActive(false);
         StartCoroutine(ExtraLifeGetTemp());
     }
