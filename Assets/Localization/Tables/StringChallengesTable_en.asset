@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: come tomorrow
     m_Metadata:
       m_Items: []
+  - m_Id: 296224609714176
+    m_Localized: coming soon
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

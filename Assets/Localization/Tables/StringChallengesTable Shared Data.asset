@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: tomorrow
     m_Metadata:
       m_Items: []
+  - m_Id: 296224609714176
+    m_Key: coming_soon
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

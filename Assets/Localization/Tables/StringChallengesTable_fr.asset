@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: venez demain
     m_Metadata:
       m_Items: []
+  - m_Id: 296224609714176
+    m_Localized: "bient\xF4t disponible"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: "n\u0101kt r\u012Bt"
     m_Metadata:
       m_Items: []
+  - m_Id: 296224609714176
+    m_Localized: "dr\u012Bzum\u0101"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
