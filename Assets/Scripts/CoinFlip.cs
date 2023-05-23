@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class CoinFlip : MonoBehaviour
 {
     public Menu menu;
+    public Saving saving;
     public GameObject coin;
     public GameObject endpanel;
     public GameObject challengesPanel;
@@ -74,5 +75,6 @@ public class CoinFlip : MonoBehaviour
         endpanel.SetActive(false);
         gameObject.SetActive(false);
         challengesPanel.SetActive(false);
+        saving.Save();
     }
 }

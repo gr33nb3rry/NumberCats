@@ -16,6 +16,7 @@ public class Saving : MonoBehaviour
     private string coinsScoreHighscore = "";
     private string settings = "";
     private string stat = "";
+    private string challenges = "";
     private string hatBought = "";
     private string faceBought = "";
     private string bodyBought = "";
@@ -87,6 +88,7 @@ public class Saving : MonoBehaviour
         coinsScoreHighscore = "";
         settings = "";
         stat = "";
+        challenges = "";
         hatBought = "";
         faceBought = "";
         bodyBought = "";
@@ -94,6 +96,7 @@ public class Saving : MonoBehaviour
         CoinsScoreHSGenerate();
         SettingsGenerate();
         StatGenerate();
+        ChallengesGenerate();
         HatBoughtGenerate();
         FaceBoughtGenerate();
         BodyBoughtGenerate();
@@ -102,6 +105,7 @@ public class Saving : MonoBehaviour
             {"CoinsScoreHighscore", coinsScoreHighscore},
             {"Settings", settings},
             {"Stat", stat},
+            {"Challenges", challenges},
             {"HatBought", hatBought},
             {"FaceBought", faceBought},
             {"BodyBought", bodyBought},
@@ -157,6 +161,16 @@ public class Saving : MonoBehaviour
         stat += ' ';
         stat += Settings.gamesWonHard.ToString();
     }
+    private void ChallengesGenerate()
+    {
+        challenges += Challenges.coinFlipPlayed.ToString();
+        challenges += ' ';
+        challenges += 0.ToString();
+        challenges += ' ';
+        challenges += 0.ToString();
+        challenges += ' ';
+        challenges += 0.ToString();
+    }
     private void HatBoughtGenerate()
     {
         for (int i = 0; i < Customization.hatBought.Count; i++)
@@ -199,6 +213,11 @@ public class Saving : MonoBehaviour
             string coinsScoreHSTemp = savedData["CoinsScoreHighscore"];
             string settingsTemp = savedData["Settings"];
             string statTemp = savedData["Stat"];
+            if (savedData.ContainsKey("Challenges") == true)
+            {
+                string challengesTemp = savedData["Challenges"];
+                ChallengesLoad(challengesTemp);
+            }
             string hatBoughtTemp = savedData["HatBought"];
             string faceBoughtTemp = savedData["FaceBought"];
             string bodyBoughtTemp = savedData["BodyBought"];
@@ -256,6 +275,11 @@ public class Saving : MonoBehaviour
         Settings.gamesWonMedium = Convert.ToInt32(dataTemp[3]);
         Settings.gamesPlayedHard = Convert.ToInt32(dataTemp[4]);
         Settings.gamesWonHard = Convert.ToInt32(dataTemp[5]);
+    }
+    private void ChallengesLoad(string data)
+    {
+        string[] dataTemp = data.Split(' ');
+        Challenges.coinFlipPlayed = Convert.ToInt32(dataTemp[0]);
     }
     private void HatBoughtLoad(string data)
     {
