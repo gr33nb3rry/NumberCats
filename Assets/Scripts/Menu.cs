@@ -9,6 +9,7 @@ using System.Collections.Generic;
 public class Menu : MonoBehaviour
 {
     static public int coins;
+    static public int lifes;
     static public int score;
     static public int highScore;
     static public int activePanel = 1;
@@ -40,6 +41,7 @@ public class Menu : MonoBehaviour
     public LocalizeStringEvent highScoreText;
     public LocalizeStringEvent scoreText;
     public Text coinsText;
+    public Text lifesText;
     [Header("Audio")]
     public AudioClip[] footerSounds;
     public AudioSource footerAudio;
@@ -51,6 +53,7 @@ public class Menu : MonoBehaviour
         customization.CalculateBoughtCount();
         CheckHighScore();
         UpdateCoins();
+        UpdateLifes();
         UpdateHighScore();
         UpdateScore();
         UpdateCat();
@@ -112,6 +115,10 @@ public class Menu : MonoBehaviour
     public void UpdateCoins()
     {
         coinsText.text = coins.ToString("N0", new CultureInfo("en-us"));
+    }
+    public void UpdateLifes()
+    {
+        lifesText.text = lifes.ToString("N0", new CultureInfo("en-us"));
     }
     private void UpdateCat()
     {
