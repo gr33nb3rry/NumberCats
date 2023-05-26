@@ -27,15 +27,23 @@ public class FortunaWheel : MonoBehaviour
     {
         spinButton.SetActive(true);
         wheelCells.rotation = Quaternion.identity;
-        UpdateRewards();
+        UpdateRewards(1);
         MixImagesToCoin();
     }
-    private void UpdateRewards()
+    private void UpdateRewards(int isRewardCoins)
     {
         for (int i = 0; i < wheelRewardsText.Length / 2; i++)
         {
-            wheelRewardsText[i * 2].text = wheelRewardsLifes[i].ToString();
-            wheelRewardsText[i * 2 + 1].text = wheelRewardsCoins[i].ToString();
+            if (isRewardCoins == 0)
+            {
+                wheelRewardsText[i * 2].text = wheelRewardsLifes[i].ToString();
+                wheelRewardsText[i * 2 + 1].text = wheelRewardsCoins[i].ToString();
+            }
+            else
+            {
+                wheelRewardsText[i * 2].text = wheelRewardsCoins[i].ToString();
+                wheelRewardsText[i * 2 + 1].text = wheelRewardsLifes[i].ToString();
+            }
         }
     }
     public void Spin()
@@ -52,14 +60,15 @@ public class FortunaWheel : MonoBehaviour
         wheelRewardsCoins = wheelRewardsCoins.OrderBy(x => random.Next()).ToArray();
         wheelRewardsLifes = wheelRewardsLifes.OrderBy(x => random.Next()).ToArray();
 
-        UpdateRewards();
-        Debug.Log(isRewardCoins);
+        UpdateRewards(isRewardCoins);
         if (isRewardCoins == 1)
         {
+            Debug.Log(isRewardCoins);
             MixImagesToCoin();
         }
         else
         {
+            Debug.Log(isRewardCoins);
             MixImagesToLife();
         }
     }
@@ -67,16 +76,16 @@ public class FortunaWheel : MonoBehaviour
     {
         for (int i = 0; i < wheelRewardsImages.Length / 2; i++)
         {
-            wheelRewardsImages[i * 2].sprite = coinsLifesImages[1];
-            wheelRewardsImages[i * 2 + 1].sprite = coinsLifesImages[0];
+            wheelRewardsImages[i * 2].sprite = coinsLifesImages[0];
+            wheelRewardsImages[i * 2 + 1].sprite = coinsLifesImages[1];
         }
     }
     private void MixImagesToLife()
     {
         for (int i = 0; i < wheelRewardsImages.Length / 2; i++)
         {
-            wheelRewardsImages[i * 2].sprite = coinsLifesImages[0];
-            wheelRewardsImages[i * 2 + 1].sprite = coinsLifesImages[1];
+            wheelRewardsImages[i * 2].sprite = coinsLifesImages[1];
+            wheelRewardsImages[i * 2 + 1].sprite = coinsLifesImages[0];
         }
     }
     private void Win()
