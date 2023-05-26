@@ -73,6 +73,10 @@ MonoBehaviour:
     m_Localized: "d\xE9fis"
     m_Metadata:
       m_Items: []
+  - m_Id: 8284850941509632
+    m_Localized: "r\xE9essayer"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -73,6 +73,10 @@ MonoBehaviour:
     m_Localized: "izaicin\u0101jumi"
     m_Metadata:
       m_Items: []
+  - m_Id: 8284850941509632
+    m_Localized: "atk\u0101rtot"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -77,6 +77,10 @@ MonoBehaviour:
     m_Localized: challenges
     m_Metadata:
       m_Items: []
+  - m_Id: 8284850941509632
+    m_Localized: retry
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

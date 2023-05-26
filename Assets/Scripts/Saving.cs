@@ -9,6 +9,8 @@ using System.Collections;
 
 public class Saving : MonoBehaviour
 {
+    public GameObject noWifiImage;
+    public GameObject retryButton;
     public Customization customization;
     public Settings settingsPanel;
     public bool isStart;
@@ -20,22 +22,45 @@ public class Saving : MonoBehaviour
     private string hatBought = "";
     private string faceBought = "";
     private string bodyBought = "";
-    async void Awake()
+    void Awake()
     {
         if (isStart)
         {
             try
             {
-                await UnityServices.InitializeAsync();
-                SignInAnonymouslyAsync();
+                Initialize();
 
             }
             catch (Exception e)
             {
                 Debug.LogException(e);
+                InitializeError();
             }
         }
         
+    }
+    private void InitializeError()
+    {
+        noWifiImage.SetActive(true);
+        retryButton.SetActive(true);
+    }
+    public void Retry()
+    {
+        try
+        {
+            Initialize();
+
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+            InitializeError();
+        }
+    }
+    async void Initialize()
+    {
+        await UnityServices.InitializeAsync();
+        SignInAnonymouslyAsync();
     }
     async void SignInAnonymouslyAsync()
     {
@@ -59,15 +84,6 @@ public class Saving : MonoBehaviour
             Debug.LogException(ex);
         }
     }
-    /*
-    void OnApplicationPause(bool pauseStatus)
-    {
-        if (pauseStatus)
-        {
-            Save();
-        }
-    }
-    */
     IEnumerator LoadMenu()
     {
         yield return new WaitForSeconds(0.1f);

@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: challenges
     m_Metadata:
       m_Items: []
+  - m_Id: 8284850941509632
+    m_Key: retry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
