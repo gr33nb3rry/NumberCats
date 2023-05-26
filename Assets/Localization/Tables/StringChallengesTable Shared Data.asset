@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: coming_soon
     m_Metadata:
       m_Items: []
+  - m_Id: 1354281733242880
+    m_Key: w_spin
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

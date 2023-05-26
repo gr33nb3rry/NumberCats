@@ -42,6 +42,10 @@ MonoBehaviour:
     m_Localized: "dr\u012Bzum\u0101"
     m_Metadata:
       m_Items: []
+  - m_Id: 1354281733242880
+    m_Localized: griezt
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

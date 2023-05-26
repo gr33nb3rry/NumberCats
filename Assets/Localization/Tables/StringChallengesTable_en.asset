@@ -42,6 +42,10 @@ MonoBehaviour:
     m_Localized: coming soon
     m_Metadata:
       m_Items: []
+  - m_Id: 1354281733242880
+    m_Localized: spin
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
