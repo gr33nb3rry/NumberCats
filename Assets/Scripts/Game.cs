@@ -70,6 +70,8 @@ public class Game : MonoBehaviour
     public LocalizeStringEvent chanceText;
     public LocalizeStringEvent scoreText;
     public Text coinsText;
+    public Text extraLifeLifesText;
+    public Text lifesText;
     [Header("Audio")]
     public AudioClip[] catSounds;
     public AudioClip[] winLoseSounds;
@@ -480,20 +482,32 @@ public class Game : MonoBehaviour
         catAudio.clip = winLoseSounds[1];
         catAudio.Play();
     }
+
+    private int lifesNeed = 1;
     private void OpenExtraLifePanel()
     {
+        lifesText.text = Menu.lifes.ToString();
+        extraLifeLifesText.text = lifesNeed.ToString();
         extraLifePanel.SetActive(true);
         isExtraLifeGot = true;
+    }
+    public void ExtraLifeGetForLifes()
+    {
+        if (Menu.lifes >= lifesNeed)
+        {
+            Menu.lifes -= lifesNeed;
+            StartCoroutine(ExtraLifeGetTemp());
+        }
     }
     public void ExtraLifeGet()
     {
         ads.ShowAd();
-        extraLifePanel.SetActive(false);
         StartCoroutine(ExtraLifeGetTemp());
     }
     IEnumerator ExtraLifeGetTemp()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.25f);
+        extraLifePanel.SetActive(false);
         for (int i = 0; i < roundCount; i++)
         {
             slots.transform.GetChild(i).GetChild(2).GetChild(1).gameObject.SetActive(false);
