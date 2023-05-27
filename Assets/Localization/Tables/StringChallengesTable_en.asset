@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Localized: spin
     m_Metadata:
       m_Items: []
+  - m_Id: 1779068754378752
+    m_Localized: congratulation
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -23,6 +23,7 @@ public class FortunaWheel : MonoBehaviour
     private int reward;
     private int[] wheelRewardsCoins = new int[] {300,150,50,10};
     private int[] wheelRewardsLifes = new int[] {1, 2, 3, 4};
+    private int isRewardCoins;
     public void OnEnable()
     {
         spinButton.SetActive(true);
@@ -56,7 +57,7 @@ public class FortunaWheel : MonoBehaviour
     private void Mix()
     {
         System.Random random = new System.Random();
-        int isRewardCoins = Random.Range(0, 2);
+        isRewardCoins = Random.Range(0, 2);
         wheelRewardsCoins = wheelRewardsCoins.OrderBy(x => random.Next()).ToArray();
         wheelRewardsLifes = wheelRewardsLifes.OrderBy(x => random.Next()).ToArray();
 
@@ -90,19 +91,38 @@ public class FortunaWheel : MonoBehaviour
     }
     private void Win()
     {
-        //reward = wheelRewards[2];
-    }
-    private void End()
-    {
-
+        if (isRewardCoins == 1)
+        {
+            reward = wheelRewardsCoins[1];
+            rewardImage.sprite = coinsLifesImages[0];
+        }
+        else
+        {
+            reward = wheelRewardsLifes[1];
+            rewardImage.sprite = coinsLifesImages[1];
+        }
+        rewardText.text = reward.ToString();
+        endpanel.SetActive(true);
     }
     public void Collect()
     {
+        GiveReward();
         menu.UpdateCoins();
         menu.UpdateLifes();
         endpanel.SetActive(false);
         gameObject.SetActive(false);
         challengesPanel.SetActive(false);
         saving.Save();
+    }
+    private void GiveReward()
+    {
+        if (isRewardCoins == 1)
+        {
+            Menu.coins += reward;
+        }
+        else
+        {
+            Menu.lifes += reward;
+        }
     }
 }

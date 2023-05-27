@@ -4,9 +4,11 @@ using UnityEngine.UI;
 public class Challenges : MonoBehaviour
 {
     static public int coinFlipPlayed = 0;
+    static public int wheelPlayed = 0;
     [Header("Panels")]
     public GameObject challengesPanel;
     public GameObject coinFlipPanel;
+    public GameObject wheelPanel;
     [Header("Progress")]
     public Slider progressSlider;
     public Text progressLeftText;
@@ -14,8 +16,10 @@ public class Challenges : MonoBehaviour
     public Text progressCurrentText;
     [Header("Texts")]
     public Text coinFlipCountText;
+    public Text wheelCountText;
 
     private int coinFlipTicketsCount = 0;
+    private int wheelTicketsCount = 0;
 
     public void OnEnable()
     {
@@ -26,7 +30,10 @@ public class Challenges : MonoBehaviour
     {
         coinFlipTicketsCount =
             (Settings.gamesPlayedEasy + Settings.gamesPlayedMedium + Settings.gamesPlayedHard) / 3 - coinFlipPlayed;
+        wheelTicketsCount =
+            (Settings.gamesPlayedEasy + Settings.gamesPlayedMedium + Settings.gamesPlayedHard) / 3 - wheelPlayed;
         coinFlipCountText.text = coinFlipTicketsCount.ToString();
+        wheelCountText.text = wheelTicketsCount.ToString();
     }
     private void UpdateProgress()
     {
@@ -57,5 +64,19 @@ public class Challenges : MonoBehaviour
     {
         challengesPanel.SetActive(true);
         coinFlipPanel.SetActive(true);
+    }
+    public void Wheel()
+    {
+        if (wheelTicketsCount > 0)
+        {
+            wheelPlayed++;
+            UpdateChallenges();
+            Invoke("WheelOpen", 0.25f);
+        }
+    }
+    private void WheelOpen()
+    {
+        challengesPanel.SetActive(true);
+        wheelPanel.SetActive(true);
     }
 }

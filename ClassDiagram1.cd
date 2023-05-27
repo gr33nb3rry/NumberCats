@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IronSourceDemoScript">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGOhAmKsAXgIBQACFACAKAUACQSgAkoWAwDRJBCAiBo=</HashCode>
+      <FileName>Assets\IronSource\DemoScene\IronSourceDemoScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndroidAgent" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAVBA0IQYoQAAAABCAAVgqAABgCQAkIGEAAMCBKylRA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\AndroidAgent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IronSourceConfig" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAgAAAAgAAAAAAQAQEACAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IronSourceError">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAgAAAEIAAAAAAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dataSource">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceIAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IronSourceAdUnits">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAACAIAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceIAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IronSourceInitializationAndroid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceInitializationAndroid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IronSourceInterstitialEvents">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAQQAAAAAwQEAAAAAQAAAAAABAACAAAAAEA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceInterstitialEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IronSourceRewardedVideoAndroid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACOAAAIoCgAAAQMAAAAQABAQAAABAAAQBQIIIAICgA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceRewardedVideoAndroid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IronSourceRewardedVideoLevelPlayManualAndroid" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayManualAndroid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AdsInitializeClass" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAIgEA=</HashCode>
+      <FileName>Assets\Scripts\AdsInitializeClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Attributes">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Attributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEADAACAACAAAACAQAiAAAAAEAgAgAAASAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Challenges">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAACAAAAAAgAAAAAABAgAQoAAQAAAAAAAAAACAQ=</HashCode>
+      <FileName>Assets\Scripts\Challenges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChooseLanguage">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ChooseLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoinFlip">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAIBAQAAAAAAAgAAAoAAAAgACQQAEQAAAAAAAAAgiAA=</HashCode>
+      <FileName>Assets\Scripts\CoinFlip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Customization">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABVAIoQUCMGCQAAAAAEBAgCgQaIAAEAggAQQAAgjiA=</HashCode>
+      <FileName>Assets\Scripts\Customization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortunaWheel">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDBAIAAAAAAggAEMAAABigCEAAEQAAAEAAEgIAqAA=</HashCode>
+      <FileName>Assets\Scripts\FortunaWheel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MEABxE6DFCAXAwQYwMAqIN0WYYSgAAymgliIQAaioiA=</HashCode>
+      <FileName>Assets\Scripts\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu">
+    <Position X="9.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAoIAKAAgUxIAJCIAAAoIaaHCQAEjFQECQAAEyA=</HashCode>
+      <FileName>Assets\Scripts\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ranks">
+    <Position X="11" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAgCAAACABAAAAQgCAAAgAAAEAAAlAAAAggAgSAA=</HashCode>
+      <FileName>Assets\Scripts\Ranks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RewardAd" BaseTypeListCollapsed="true">
+    <Position X="11" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAAAAAAAQAAgQACAAAAAAAQAAAAAAAgAgAAEA=</HashCode>
+      <FileName>Assets\Scripts\RewardAd.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Saving">
+    <Position X="2.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAhIogQAAgESBgBQAAAAAAAgCAAgW4ADAYAAEAgFI=</HashCode>
+      <FileName>Assets\Scripts\Saving.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Settings">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQDhAgIoCQApQQhAoRtAVAoAQBAAACCIIAiiIkyRKiQ=</HashCode>
+      <FileName>Assets\Scripts\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop">
+    <Position X="2.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAQgAACAgAgAAEACCAAgAACIABAFAoBACAQIACCA=</HashCode>
+      <FileName>Assets\Scripts\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopItem">
+    <Position X="11" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Scripts\ShopItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Slot">
+    <Position X="11" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Slot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SlotTutorial">
+    <Position X="5.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\SlotTutorial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tutorial">
+    <Position X="12.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MEABxE6DECBXAwQYxMAKINUWaYSgAAymglmISAaioiA=</HashCode>
+      <FileName>Assets\Scripts\Tutorial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IronSourceJSON.Json">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <NestedTypes>
+      <Class Name="IronSourceJSON.Json.Parser" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\IronSource\Scripts\IronSourceJSON.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="IronSourceJSON.Json.Serializer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\IronSource\Scripts\IronSourceJSON.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IronSourceJSON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IUnityBanner">
+    <Position X="5.75" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAACAAIAAQACAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityBanner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUnityImpressionData" Collapsed="true">
+    <Position X="4" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityImpressionData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUnityInitialization">
+    <Position X="7.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityInitialization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUnityInterstitial">
+    <Position X="4" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACAAAABDAAAAAAAAAAAQAAEAQABAAABAAABAIAAg=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityInterstitial.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUnityRewardedVideo" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAACgAAAQEAAAAAABAQAAAAAAAABQAAIAACgA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityRewardedVideo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUnityRewardedVideoManual">
+    <Position X="9.25" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\IronSource\Scripts\IUnityRewardedVideoManual.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

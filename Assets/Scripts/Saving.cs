@@ -16,6 +16,7 @@ public class Saving : MonoBehaviour
     public bool isStart;
     private string cat = "";
     private string coinsScoreHighscore = "";
+    private string lifes = "";
     private string settings = "";
     private string stat = "";
     private string challenges = "";
@@ -102,6 +103,7 @@ public class Saving : MonoBehaviour
     {
         cat = "";
         coinsScoreHighscore = "";
+        lifes = "";
         settings = "";
         stat = "";
         challenges = "";
@@ -110,6 +112,7 @@ public class Saving : MonoBehaviour
         bodyBought = "";
         CatGenerate();
         CoinsScoreHSGenerate();
+        LifesGenerate();
         SettingsGenerate();
         StatGenerate();
         ChallengesGenerate();
@@ -119,6 +122,7 @@ public class Saving : MonoBehaviour
         var data = new Dictionary<string, object> {
             {"Cat", cat},
             {"CoinsScoreHighscore", coinsScoreHighscore},
+            {"Lifes", lifes},
             {"Settings", settings},
             {"Stat", stat},
             {"Challenges", challenges},
@@ -144,6 +148,10 @@ public class Saving : MonoBehaviour
         coinsScoreHighscore += Menu.score.ToString();
         coinsScoreHighscore += ' ';
         coinsScoreHighscore += Menu.highScore.ToString();
+    }
+    private void LifesGenerate()
+    {
+        lifes += Menu.lifes.ToString();
     }
     private void SettingsGenerate()
     {
@@ -181,7 +189,7 @@ public class Saving : MonoBehaviour
     {
         challenges += Challenges.coinFlipPlayed.ToString();
         challenges += ' ';
-        challenges += 0.ToString();
+        challenges += Challenges.wheelPlayed.ToString();
         challenges += ' ';
         challenges += 0.ToString();
         challenges += ' ';
@@ -227,6 +235,11 @@ public class Saving : MonoBehaviour
             Dictionary<string, string> savedData = await CloudSaveService.Instance.Data.LoadAllAsync();
             string catTemp = savedData["Cat"];
             string coinsScoreHSTemp = savedData["CoinsScoreHighscore"];
+            if (savedData.ContainsKey("Lifes") == true)
+            {
+                string lifesTemp = savedData["Lifes"];
+                LifesLoad(lifesTemp);
+            }
             string settingsTemp = savedData["Settings"];
             string statTemp = savedData["Stat"];
             if (savedData.ContainsKey("Challenges") == true)
@@ -267,6 +280,11 @@ public class Saving : MonoBehaviour
         Menu.score = Convert.ToInt32(dataTemp[1]);
         Menu.highScore = Convert.ToInt32(dataTemp[2]);
     }
+    private void LifesLoad(string data)
+    {
+        string[] dataTemp = data.Split(' ');
+        Menu.lifes = Convert.ToInt32(dataTemp[0]);
+    }
     private void SettingsLoad(string data)
     {
         string[] dataTemp = data.Split(' ');
@@ -296,6 +314,7 @@ public class Saving : MonoBehaviour
     {
         string[] dataTemp = data.Split(' ');
         Challenges.coinFlipPlayed = Convert.ToInt32(dataTemp[0]);
+        Challenges.wheelPlayed = Convert.ToInt32(dataTemp[1]);
     }
     private void HatBoughtLoad(string data)
     {
