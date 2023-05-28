@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,7 @@ public class FortunaWheel : MonoBehaviour
     public Text rewardText;
     public Image rewardImage;
     public AudioClip winSound;
+    public AudioClip spinSound;
     public AudioSource audioSource;
     private int reward;
     private int[] wheelRewardsCoins = new int[] {300,150,50,10};
@@ -51,8 +53,30 @@ public class FortunaWheel : MonoBehaviour
     {
         wheel.GetComponent<Animation>().Play();
         spinButton.SetActive(false);
+        StartCoroutine(SpinSound());
         Invoke("Mix", 1);
         Invoke("Win", 5);
+    }
+    IEnumerator SpinSound()
+    {
+        audioSource.clip = spinSound;
+        yield return new WaitForSeconds(0.416f);
+        audioSource.Play();
+        yield return new WaitForSeconds(0.267f);
+        audioSource.Play();
+        yield return new WaitForSeconds(0.15f);
+        for (int i = 0; i < 15; i++)
+        {
+            audioSource.Play();
+            yield return new WaitForSeconds(0.1f);
+        }
+        audioSource.Play();
+        yield return new WaitForSeconds(0.15f);
+        audioSource.Play();
+        yield return new WaitForSeconds(0.15f);
+        audioSource.Play();
+        yield return new WaitForSeconds(0.45f);
+        audioSource.Play();
     }
     private void Mix()
     {
@@ -103,6 +127,8 @@ public class FortunaWheel : MonoBehaviour
         }
         rewardText.text = reward.ToString();
         endpanel.SetActive(true);
+        audioSource.clip = winSound;
+        audioSource.Play();
     }
     public void Collect()
     {
