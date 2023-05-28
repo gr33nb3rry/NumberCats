@@ -35,7 +35,7 @@ public class Game : MonoBehaviour
     private int[,] numbers;
     private int idLastPut;
     private int catSoundCount = 0;
-    private bool isExtraLifeGot = false;
+    private int extraLifeGotCount = 0;
     int breakpoint = 100;
     private int randomLeft = 1;
     private int randomRight = 1000;
@@ -471,7 +471,7 @@ public class Game : MonoBehaviour
     }
     private void Lose()
     {
-        if (isExtraLifeGot == false)
+        if (extraLifeGotCount < 2)
         {
             OpenExtraLifePanel();
         }
@@ -483,26 +483,28 @@ public class Game : MonoBehaviour
         catAudio.Play();
     }
 
-    private int lifesNeed = 1;
+    private int[] lifesNeed = new int[] {1,3};
     private void OpenExtraLifePanel()
     {
         lifesText.text = Menu.lifes.ToString();
-        extraLifeLifesText.text = lifesNeed.ToString();
+        extraLifeLifesText.text = lifesNeed[extraLifeGotCount].ToString();
         extraLifePanel.SetActive(true);
-        isExtraLifeGot = true;
+        
     }
     public void ExtraLifeGetForLifes()
     {
-        if (Menu.lifes >= lifesNeed)
+        if (Menu.lifes >= lifesNeed[extraLifeGotCount])
         {
-            Menu.lifes -= lifesNeed;
+            Menu.lifes -= lifesNeed[extraLifeGotCount];
             StartCoroutine(ExtraLifeGetTemp());
+            extraLifeGotCount++;
         }
     }
     public void ExtraLifeGet()
     {
         ads.ShowAd();
         StartCoroutine(ExtraLifeGetTemp());
+        extraLifeGotCount++;
     }
     IEnumerator ExtraLifeGetTemp()
     {
