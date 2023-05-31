@@ -16,6 +16,7 @@ public class Menu : MonoBehaviour
     public Customization customization;
     public Saving saving;
     public Settings settings;
+    public ShortAd shortAd;
     [Header("Panels")]
     public GameObject customizePanel;
     public GameObject playPanel;
@@ -45,7 +46,8 @@ public class Menu : MonoBehaviour
     [Header("Audio")]
     public AudioClip[] footerSounds;
     public AudioSource footerAudio;
-    
+
+    static public int gamesPlayedOnSession = 0;
     void Start()
     {
         QualitySettings.vSyncCount = 0;
@@ -60,6 +62,11 @@ public class Menu : MonoBehaviour
         settings.CheckForDarkTheme();
         settings.CheckForSounds();
         settings.CheckForMusic();
+
+        if (gamesPlayedOnSession > 0 && gamesPlayedOnSession % 3 == 0)
+        {
+            shortAd.ShowAd();
+        }
     }
     private void CheckHighScore()
     {

@@ -15441,6 +15441,7 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15529,6 +15530,7 @@ MonoBehaviour:
   customization: {fileID: 1636811932}
   saving: {fileID: 519420034}
   settings: {fileID: 548229305}
+  shortAd: {fileID: 519420036}
   customizePanel: {fileID: 1636811927}
   playPanel: {fileID: 156039804}
   shopPanel: {fileID: 1281596854}
@@ -15590,6 +15592,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testMode: 0
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a422c554f9c884a9adeba7ea2e0b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &520648454
 GameObject:
   m_ObjectHideFlags: 0

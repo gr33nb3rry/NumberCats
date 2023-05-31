@@ -607,6 +607,7 @@ public class Game : MonoBehaviour
             if (isWon) Settings.gamesWonHard++;
             Settings.gamesPlayedHard++;
         }
+        Menu.gamesPlayedOnSession++;
         saving.Save();
         Settings.isChanged = false;
         StartCoroutine(LoadMenu());

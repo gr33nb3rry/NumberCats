@@ -12634,7 +12634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noWifiImage: {fileID: 0}
   retryButton: {fileID: 0}
-  customization: {fileID: 0}
+  customization: {fileID: 1636811932}
   settingsPanel: {fileID: 0}
   isStart: 0
 --- !u!114 &519420034
