@@ -101,6 +101,7 @@ public class Saving : MonoBehaviour
     }
     public async void Save()
     {
+        customization.CalculateBoughtCount();
         cat = "";
         coinsScoreHighscore = "";
         lifes = "";

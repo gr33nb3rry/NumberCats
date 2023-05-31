@@ -36412,6 +36412,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dd20215da1880cc40ae14746d24ebe53, type: 3}
   - {fileID: 21300000, guid: 54c1948b4dec274428f4da9f95553fe6, type: 3}
   - {fileID: 21300000, guid: b3ca2eb7338fb9a44b1a3c687d3a6f10, type: 3}
+  - {fileID: 21300000, guid: 95237f995a92cf243be5872136987e5b, type: 3}
   hat: {fileID: 0}
   face: {fileID: 0}
   body: {fileID: 0}
