@@ -56,6 +56,7 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 500),
         new ShopItem(cost: 500),
         new ShopItem(cost: 500),
+        new ShopItem(cost: 500),
     };
     static public ShopItem[] bodyItems = new ShopItem[]
     {
@@ -75,6 +76,10 @@ public class Customization : MonoBehaviour
         new ShopItem(cost: 3000),
         new ShopItem(cost: 3000),
         new ShopItem(cost: 3000),
+        new ShopItem(cost: 4000),
+        new ShopItem(cost: 4000),
+        new ShopItem(cost: 4000),
+        new ShopItem(cost: 4000),
     };
     static public int hatChosen;
     static public int faceChosen;
