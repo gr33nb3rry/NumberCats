@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CoinFlip : MonoBehaviour
+public class CoinFlip : MonoBehaviour, IChallenge
 {
     public Menu menu;
     public Saving saving;

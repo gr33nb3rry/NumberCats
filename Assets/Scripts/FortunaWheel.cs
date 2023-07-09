@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FortunaWheel : MonoBehaviour
+public class FortunaWheel : MonoBehaviour, IChallenge
 {
     public Menu menu;
     public Saving saving;
@@ -130,16 +130,7 @@ public class FortunaWheel : MonoBehaviour
         audioSource.clip = winSound;
         audioSource.Play();
     }
-    public void Collect()
-    {
-        GiveReward();
-        menu.UpdateCoins();
-        menu.UpdateLifes();
-        endpanel.SetActive(false);
-        gameObject.SetActive(false);
-        challengesPanel.SetActive(false);
-        saving.Save();
-    }
+    
     private void GiveReward()
     {
         if (isRewardCoins == 1)
@@ -150,5 +141,16 @@ public class FortunaWheel : MonoBehaviour
         {
             Menu.lifes += reward;
         }
+    }
+
+    public void Collect()
+    {
+        GiveReward();
+        menu.UpdateCoins();
+        menu.UpdateLifes();
+        endpanel.SetActive(false);
+        gameObject.SetActive(false);
+        challengesPanel.SetActive(false);
+        saving.Save();
     }
 }
